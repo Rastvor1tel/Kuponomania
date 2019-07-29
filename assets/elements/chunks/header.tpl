@@ -26,9 +26,9 @@
                 <li class="menu-splitter"></li>
                 <li class="menu-item">
                     {if $_modx->isAuthenticated('web')}
-                        {'headerLk' | chunk}
+                        {include 'file:chunks/Login/headerLk.tpl'}
                     {else}
-                        {'headerLogin' | chunk}
+                        {include 'file:chunks/Login/headerLogin.tpl'}
                     {/if}
                 </li>
                 <li class="menu-splitter"></li>

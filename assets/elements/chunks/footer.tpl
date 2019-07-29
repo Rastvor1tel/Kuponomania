@@ -63,7 +63,7 @@
     'validationErrorMessage'=>'В форме содержатся ошибки!',
     'successMessage'=>'Сообщение успешно отправлено'
 ]}
-
+<!--
 <div id="connect-modal" class="mfp-hide" style="position: fixed; left: calc(50% - 200px); width: 400px; margin: 0 auto; padding: 20px; background-color: #FFF; border-radius: 20px; text-align: center;">
     <div class="footer-column-name" style="margin-bottom: 12px; font-size: 25px; line-height: 27px;"><span>Тех. поддержка сайта</span>
     </div>
@@ -73,3 +73,4 @@
         <li class="large-text"><a href="mailto:kuponomaniya@inbox.ru" style="text-decoration: none; color: #89bf45;">kuponomaniya@inbox.ru</a></li>
     </ul>
 </div>
+-->

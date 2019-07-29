@@ -7,3 +7,4 @@
     &tplHere=`@INLINE <li class="categories-menu-item"><span class="categories-menu-link" [[+attributes]]>[[+menutitle]]</span>[[+wrapper]]<div class="categories-menu-item-count"></div></li>`
     ]]
 </div>
+<a class="categories-readmore">Смотреть категории</a>

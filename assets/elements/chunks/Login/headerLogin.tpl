@@ -1,0 +1,1 @@
+<a href="{25 | url}" class="login_link" id="topbar_login" role="login_link"><i class="icon--login"></i>Войти или зарегистрироваться</a>
