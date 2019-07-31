@@ -2686,7 +2686,7 @@ ul {
 }
 .p-deal_containers {
     margin-bottom: 20px;
-    text-align: center;
+    /*text-align: center;*/
 }
 .p-deal_containers .loginFPLegend {
     font-size: 26px;
