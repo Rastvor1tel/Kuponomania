@@ -4,5 +4,3 @@
         <ol class="comment-list" id="comments">[[+comments]]</ol>
     </div>
 </div>
-
-<!--tickets_subscribed checked-->
