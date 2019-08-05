@@ -1,0 +1,45 @@
+@import "lib/lightslider.min.css";
+
+.msdo-colors label,
+.msdo-sizes label {cursor: pointer;}
+
+.msdo-sizes label input,
+.msdo-colors label input {display: none;}
+
+
+
+
+.msdo-images img {
+    display: block;
+    max-width: 100%;
+}
+
+.msdo-images .lSPager li {opacity: 0.3;}
+.msdo-images .lSPager li.active {opacity: 1;}
+
+
+
+
+.msdo-colors label input:checked +img {opacity: 1}
+.msdo-colors label:hover img {opacity: 0.6}
+.msdo-colors img{ display: block;  width: 70%; opacity: 0.3;}
+
+
+
+
+.msdo-sizes {}
+.msdo-sizes label {    margin: 0 10px 0 0; }
+.msdo-sizes label input:checked+span{
+    color: #171717;
+    background: #FFF024;
+}
+.msdo-sizes label:hover span {background: #F5F5F5;}
+.msdo-sizes label span{
+    line-height: 32px;
+    display: inline-block;
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    background: #FBFBFB;
+    font-weight: bold;
+}

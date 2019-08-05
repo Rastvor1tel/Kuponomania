@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="msdo" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="msdo" version="1.1">
+
+	<object class="msdoOffer" table="msdo_offers" extends="xPDOSimpleObject">
+		<field key="product_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" />
+		<field key="value" dbtype="varchar" precision="255" phptype="string" null="true" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="integer" null="true" default="1" />
+		<field key="createdon" dbtype="datetime" phptype="datetime" null="true" />
+	</object>
+
+	<object class="msdoBought" table="msdo_bought" extends="xPDOSimpleObject">
+		<field key="product_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" />
+		<field key="order_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" />
+		<field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" />
+		<field key="value" dbtype="varchar" precision="255" phptype="string" null="true" />
+		<field key="boughtdon" dbtype="datetime" phptype="datetime" null="true" />
+	</object>
+
+</model>

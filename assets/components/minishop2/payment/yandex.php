@@ -12,13 +12,13 @@ $modx->setLogTarget('FILE');
 $miniShop2 = $modx->getService('miniShop2');
 $miniShop2->loadCustomClasses('payment');
 
-if (!class_exists('PayPal')) {
-    exit('Error: could not load payment class "PayPal".');
+if (!class_exists('Yandex')) {
+    exit('Error: could not load payment class "Yandex".');
 }
 /** @var msOrder $order */
 $order = $modx->newObject('msOrder');
 /** @var msPaymentInterface|PayPal $handler */
-$handler = new PayPal($order);
+$handler = new Yandex($order);
 
 if (isset($_GET['action']) && $_GET['action'] == 'continue' && !empty($_GET['msorder']) && !empty($_GET['mscode'])) {
     if ($order = $modx->getObject('msOrder', (int)$_GET['msorder'])) {

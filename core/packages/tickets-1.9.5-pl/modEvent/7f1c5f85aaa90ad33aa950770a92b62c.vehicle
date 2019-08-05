@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'aa61e72ef8978cc160df39b15da16e46',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '7f1c5f85aaa90ad33aa950770a92b62c',
+  'native_key' => 'OnCommentStar',
+  'object' => '{"name":"OnCommentStar","service":6,"groupname":"Tickets"}',
+);

@@ -1,0 +1,9 @@
+Changelog for msDigitalOffers.
+
+1.0.0-pl
+==============
+- Совместимость с miniShop2 2.4.2-pl
+
+0.0.1-beta
+==============
+- initial release.

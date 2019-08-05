@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msdo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2dc5d7cd868d8e4df92ec46277c7468c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '431c9457c398c3a196e89daf2ab11eea',
+  'native_key' => 'msdo_active',
+  'object' => '{"key":"msdo_active","value":true,"xtype":"combo-boolean","namespace":"msdo","area":"msdo_main","editedon":null}',
+);

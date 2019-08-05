@@ -1,0 +1,293 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '985d9fb649c6adb71c286849fba9ccdd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_delete","description":"ticket_delete","value":1}',
+        'guid' => '21813b61a02efde687de5264d7b34e4d',
+        'native_key' => NULL,
+        'signature' => '46a2be3d6985b4695f96a8179313e5ea',
+      ),
+      '5f6342b284ae4c7c0ea3ac32449d7b56' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_publish","description":"ticket_publish","value":1}',
+        'guid' => 'b9ce1f4d032f814ab52f107531d1b7ed',
+        'native_key' => NULL,
+        'signature' => 'ade7fd6451c485ba9a00cd1354703e86',
+      ),
+      '8d420821dd1a74ad4cd411e03cfb1605' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_save","description":"ticket_save","value":1}',
+        'guid' => 'b59b6e62f20238c159d1145aee6563c7',
+        'native_key' => NULL,
+        'signature' => 'e3914fa601e97fc1c2178329a74c2319',
+      ),
+      '7d1fbfb85eb09a1f109dcda97aad17ad' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_view_private","description":"ticket_view_private","value":1}',
+        'guid' => '72de09deb5e3e5149d2a90616e23b987',
+        'native_key' => NULL,
+        'signature' => '344411cadc6bf291fc33b7c7a399da22',
+      ),
+      '9e032cf4ac1cb815683a9437febda97a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_vote","description":"ticket_vote","value":1}',
+        'guid' => '9a2cb6cbd533b971220387d204db2e86',
+        'native_key' => NULL,
+        'signature' => '3a01de9bf94335384368e89c0e76f095',
+      ),
+      'bd6bcf2102e1932a13875ed574067354' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_star","description":"ticket_star","value":1}',
+        'guid' => 'f8720372e549d58df4d668117937f56a',
+        'native_key' => NULL,
+        'signature' => '4b57e44299aabfdd16c16d11d3259146',
+      ),
+      '7ce8cf5980fcaed2ec703d1d5a2281e0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_save","description":"comment_save","value":1}',
+        'guid' => '2c137f6a6e0a62a9b1cdee7c78f0f4c4',
+        'native_key' => NULL,
+        'signature' => 'd1882dc855d1383c8d5e70c4e76a40a9',
+      ),
+      'ed9af060656019e16af40d315f986584' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_delete","description":"comment_delete","value":1}',
+        'guid' => '9cd2bee4beb8151723195a87df849dc1',
+        'native_key' => NULL,
+        'signature' => 'dc36e42cd695a7257b31096c9a171315',
+      ),
+      '69951753559a7e478dbcd69f1231c8a9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_remove","description":"comment_remove","value":1}',
+        'guid' => 'c17dd025da75ddeec76d8b3c11f5ea6c',
+        'native_key' => NULL,
+        'signature' => 'd60b56f5442d9b447c07d2bf842a5939',
+      ),
+      '899159738a5c57b055a9e9073316037c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_publish","description":"comment_publish","value":1}',
+        'guid' => '3290bafd2eba4dfc8e6ea2400e8fdbad',
+        'native_key' => NULL,
+        'signature' => 'dcdea269071aae926cc2e57fb480c88d',
+      ),
+      'c13512098c434f4dca67459421bda0e1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_vote","description":"comment_vote","value":1}',
+        'guid' => '51ca523f70dc842c01c64437c70e38ce',
+        'native_key' => NULL,
+        'signature' => '458f7d338b04eb8651a207410a92886f',
+      ),
+      '5c17079d347109bee5c7a6f86a097dec' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"comment_star","description":"comment_star","value":1}',
+        'guid' => '1bf8bb4beec64b4e88919ed4c68815f3',
+        'native_key' => NULL,
+        'signature' => '25da4d1eaa23c556fff3dad19a103161',
+      ),
+      '885bcffe1a775130466c131b1f229294' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_file_upload","description":"ticket_file_upload","value":1}',
+        'guid' => 'c0411370cac5ba70662a4cb6ebb3a3e9',
+        'native_key' => NULL,
+        'signature' => '2a7fdc084e07db081c8e3eaa6fdf15ae',
+      ),
+      '918d77543b32dbb925401249c23b2579' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"ticket_file_delete","description":"ticket_file_delete","value":1}',
+        'guid' => 'ee67c833018fc8c6c461a0488330f838',
+        'native_key' => NULL,
+        'signature' => 'ab2e8aad39c8af29b8df58bb6807b7c8',
+      ),
+      'e8bc5179aa6da36d788ad95304462efc' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"thread_close","description":"thread_close","value":1}',
+        'guid' => '48812e1b1b3b6825f843aa1641b0f9aa',
+        'native_key' => NULL,
+        'signature' => '7a8ec9cd80cb3236f1cd5ed669cabe2b',
+      ),
+      '92a15de2e169588ee87ff7aaa769155e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"thread_delete","description":"thread_delete","value":1}',
+        'guid' => '5a47957f55686aeef833da5469406a8a',
+        'native_key' => NULL,
+        'signature' => 'd56821142cfbb064cdbc50a9aef66785',
+      ),
+      'c5b7ef9c51305f39ce7cc0953dec125a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"thread_remove","description":"thread_remove","value":1}',
+        'guid' => '6811052745cc71cacccb9b75b94b3325',
+        'native_key' => NULL,
+        'signature' => '7412690451b016b996ea999b8d9e0204',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c42c74fe992bee4be51117054d90993b',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => '9fd0c3395372067b0f224d60affb99ab',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"TicketsUserPolicyTemplate","description":"A policy for users to create Tickets and comments.","lexicon":"tickets:permissions","permissions":{"ticket_delete":[],"ticket_publish":[],"ticket_save":[],"ticket_view_private":[],"ticket_vote":[],"ticket_star":[],"comment_save":[],"comment_delete":[],"comment_remove":[],"comment_publish":[],"comment_vote":[],"comment_star":[],"ticket_file_upload":[],"ticket_file_delete":[],"thread_close":[],"thread_delete":[],"thread_remove":[]}}',
+);

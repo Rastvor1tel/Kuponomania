@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4b75e6bb617f19765770df563ac59f7c',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => '1f3150256ae823f947cf7407e262a4cf',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"TicketSectionPolicy","description":"A policy for add tickets in section.","parent":0,"template":0,"class":"","data":"{\\"section_add_children\\":true}","lexicon":"tickets:permissions"}',
+);

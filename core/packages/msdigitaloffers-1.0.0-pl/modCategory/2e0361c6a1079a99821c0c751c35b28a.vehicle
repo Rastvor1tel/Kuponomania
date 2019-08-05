@@ -1,0 +1,138 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      'ccaf3f7969ce24750e2773cf1256dfe6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"msdoEmail","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"$miniShop2 = $modx->getService(\'minishop2\');\\n$msdo = $modx->getService(\'msdo\', \'msdo\', $modx->getOption(\'msdo_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/msdo\\/\') . \'model\\/msdo\\/\', $scriptProperties);\\nif (!($msdo instanceof msdo)) return \'\';\\n$output = \'\';\\n$codes = array();\\n$products = $modx->getCollection(\'msOrderProduct\', array(\'order_id\' => $id, \'options:!=\' => \'[]\'));\\nif($products){\\n\\tforeach($products as $product){\\n\\t\\t$product_codes = $modx->fromJSON($product->options);\\n\\t\\tif(count($product_codes) > 1){\\n\\t\\t\\tforeach($product_codes as $code){\\n\\t\\t\\t\\t$codes[] = $code;\\n\\t\\t\\t}\\n\\t\\t}else{\\n\\t\\t\\t$codes[] = $product_codes[0];\\n\\t\\t}\\n\\t}\\n\\t$output = implode(\\"\\\\n\\", $codes);\\n}\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"core\\/components\\/msdo\\/elements\\/snippets\\/snippet.msdoEmail.php","content":"$miniShop2 = $modx->getService(\'minishop2\');\\n$msdo = $modx->getService(\'msdo\', \'msdo\', $modx->getOption(\'msdo_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/msdo\\/\') . \'model\\/msdo\\/\', $scriptProperties);\\nif (!($msdo instanceof msdo)) return \'\';\\n$output = \'\';\\n$codes = array();\\n$products = $modx->getCollection(\'msOrderProduct\', array(\'order_id\' => $id, \'options:!=\' => \'[]\'));\\nif($products){\\n\\tforeach($products as $product){\\n\\t\\t$product_codes = $modx->fromJSON($product->options);\\n\\t\\tif(count($product_codes) > 1){\\n\\t\\t\\tforeach($product_codes as $code){\\n\\t\\t\\t\\t$codes[] = $code;\\n\\t\\t\\t}\\n\\t\\t}else{\\n\\t\\t\\t$codes[] = $product_codes[0];\\n\\t\\t}\\n\\t}\\n\\t$output = implode(\\"\\\\n\\", $codes);\\n}\\nreturn $output;"}',
+        'guid' => '82328247f83d5645dde33730678d030a',
+        'native_key' => 0,
+        'signature' => '1e88be8e9769d2b017d0f1c4a61bc1d1',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'd6d2b62d17656bcdd85462d333f018ec' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"msDigitalOffers","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$msdo = $modx->getService(\'msdo\', \'msdo\', $modx->getOption(\'msdo_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/msdo\\/\') . \'model\\/msdo\\/\', $scriptProperties);\\nif (!($msdo instanceof msdo)) return \'\';\\n\\n$eventName = $modx->event->name;\\nif (method_exists($msdo, $eventName) && $msdo->active) {\\n\\t$msdo->$eventName($scriptProperties, $product);\\n}\\n\\nswitch($modx->event->name){\\n    case \'msOnChangeOrderStatus\':\\n\\t\\tif($status == 2){\\n\\t\\t\\t$products = $order->getMany(\'Products\');\\n\\t\\t\\tforeach ($products as $product){\\n\\t\\t\\t\\t$product_id  = $product->get(\'product_id\');\\n\\t\\t\\t\\t$values = $msdo->buyProductCodes($product_id, $product->get(\'count\'),  $order->get(\'id\'), $order->get(\'user_id\'));\\n\\t\\t\\t\\tif(empty($values)) continue;\\n\\t\\t\\t\\t$product->set(\'options\', $modx->toJson($values));\\n\\t\\t\\t\\t$product->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\tbreak;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/msdo\\/elements\\/plugins\\/plugin.msDigitalOffers.php","content":"$msdo = $modx->getService(\'msdo\', \'msdo\', $modx->getOption(\'msdo_core_path\', null, $modx->getOption(\'core_path\') . \'components\\/msdo\\/\') . \'model\\/msdo\\/\', $scriptProperties);\\nif (!($msdo instanceof msdo)) return \'\';\\n\\n$eventName = $modx->event->name;\\nif (method_exists($msdo, $eventName) && $msdo->active) {\\n\\t$msdo->$eventName($scriptProperties, $product);\\n}\\n\\nswitch($modx->event->name){\\n    case \'msOnChangeOrderStatus\':\\n\\t\\tif($status == 2){\\n\\t\\t\\t$products = $order->getMany(\'Products\');\\n\\t\\t\\tforeach ($products as $product){\\n\\t\\t\\t\\t$product_id  = $product->get(\'product_id\');\\n\\t\\t\\t\\t$values = $msdo->buyProductCodes($product_id, $product->get(\'count\'),  $order->get(\'id\'), $order->get(\'user_id\'));\\n\\t\\t\\t\\tif(empty($values)) continue;\\n\\t\\t\\t\\t$product->set(\'options\', $modx->toJson($values));\\n\\t\\t\\t\\t$product->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\tbreak;\\n}"}',
+        'guid' => 'e3668c3ff4b6e198f2e1cfa4188c119d',
+        'native_key' => NULL,
+        'signature' => '83255f6b8028841f8432c1ed405fb484',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '156ae4bde146e318f3eaa54471df04b0' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+              'guid' => '603ab482c407db93604885072fbd5fb3',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormPrerender',
+              ),
+              'signature' => '25f14c27e4f6d20b2bbdcf006c4545ce',
+            ),
+            'a7c782a486ad80c1607178fa2c03209b' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnChangeOrderStatus","priority":0,"propertyset":0}',
+              'guid' => '03e9105b3deafc47ce76e562e3e7d6f2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnChangeOrderStatus',
+              ),
+              'signature' => '06b15343f7a794b696096e1a270cdf06',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'msdo',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msdigitaloffers-1.0.0-pl\\/modCategory\\/2e0361c6a1079a99821c0c751c35b28a\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"msdo"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msdigitaloffers-1.0.0-pl\\/modCategory\\/2e0361c6a1079a99821c0c751c35b28a\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"msdo"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdigitaloffers-1.0.0-pl\\/modCategory\\/2e0361c6a1079a99821c0c751c35b28a.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdigitaloffers-1.0.0-pl\\/modCategory\\/2e0361c6a1079a99821c0c751c35b28a.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '253bf4c4a872010b05970a0369b77c72',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2e0361c6a1079a99821c0c751c35b28a',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"msDigitalOffers","rank":0}',
+);

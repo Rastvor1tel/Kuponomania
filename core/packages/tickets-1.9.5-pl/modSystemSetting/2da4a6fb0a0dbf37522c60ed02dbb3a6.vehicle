@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '517f8a8e01ff85296a43b8e5e7aa2766',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2da4a6fb0a0dbf37522c60ed02dbb3a6',
+  'native_key' => 'tickets.count_guests',
+  'object' => '{"key":"tickets.count_guests","value":false,"xtype":"combo-boolean","namespace":"tickets","area":"tickets.ticket","editedon":null}',
+);
