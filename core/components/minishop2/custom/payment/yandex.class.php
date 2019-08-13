@@ -34,7 +34,7 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
         ), $config);
     }
 
-    public function createPay($orderId, $orderSumm, $items = []) {
+    public function createPay($orderId, $orderSumm, $orderHash, $items = []) {
         $client = new Client();
         $client->setAuth($this->config['shopId'], $this->config['apiKey']);
         $params = [
@@ -42,26 +42,34 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
                 'value' => $orderSumm,
                 'currency' => 'RUB',
             ],
+            'description' => '',
             'confirmation' => [
                 'type' => 'redirect',
                 'return_url' => $this->config['returnUrl'],
             ],
             'items' => $items,
             'capture' => true,
+            'metadata' => [
+                'orderId' => $orderId,
+                'orderHash' => $orderHash,
+            ]
         ];
-        $payment = $client->createPayment($orderId, $params);
+        $payment = $client->createPayment($params, uniqid('', true));
         return $payment;
     }
 
     /**
      * Returns a direct link for continue payment process of existing order
+     *
      * @param msOrder $order
+     *
      * @return string
      */
     public function getPaymentLink(msOrder $order) {
         $orderId = $order->get('id');
         $orderSumm = $order->get('cost');
-        $response = $this->createPay($orderId, $orderSumm);
+        $orderHash = $this->getOrderHash($order);
+        $response = $this->createPay($orderId, $orderSumm, $orderHash);
         $link = $response->confirmation->confirmation_url;
         return $link;
     }
@@ -69,8 +77,24 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
     public function requestCheck() {
         $source = file_get_contents('php://input');
         $requestBody = json_decode($source, true);
-        $notification = ($requestBody['event'] === NotificationEventType::PAYMENT_SUCCEEDED) ? new NotificationSucceeded($requestBody) : new NotificationWaitingForCapture($requestBody);
+        try {
+            $notification = ($requestBody['event'] === NotificationEventType::PAYMENT_SUCCEEDED) ? new NotificationSucceeded($requestBody) : new NotificationWaitingForCapture($requestBody);
+        } catch (Exception $e) {
+            // Обработка ошибок при неверных данных
+        }
         $payment = $notification->getObject();
         return $payment;
+    }
+
+    public function receive(msOrder $order, $status = '') {
+        switch ($status) {
+            case 'succeeded':
+                $this->ms2->changeOrderStatus($order->get('id'), 2); // Set status "paid"
+                break;
+            case 'canceled':
+                $this->ms2->changeOrderStatus($order->get('id'), 4); // Set status "cancelled"
+                break;
+        }
+        return true;
     }
 }

@@ -325,9 +325,11 @@ class TopMenu
                 }
                 $attributes = ' href="?a='.$menu['action'].$menu['params'].'"';
             }
+            ini_set('error_reporting', E_ALL);
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
             if (!empty($menu['handler'])) {
-                //$attributes .= ' onclick="{literal} '.str_replace('"','\'',$menu['handler']).'{/literal} "'; TODO: Багулина Smarty
-                $attributes .= ' onclick=" "';
+                $attributes .= ' onclick="{literal} '.str_replace('"','\'',$menu['handler']).'{/literal} "';
             }
             $smTpl .= '<a'.$attributes.'>'.$menu['text'].$description.'</a>'."\n";
 
