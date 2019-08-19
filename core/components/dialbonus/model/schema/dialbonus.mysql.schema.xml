@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="dialbonus" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB">
+
+    <object class="dialBonusOperation" table="dialbonus_operation" extends="xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="date" dbtype="datetime" phptype="datetime" null="true"/>
+        <field key="value" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+        <field key="type" dbtype="varchar" precision="20" phptype="string" null="true" default=""/>
+
+        <aggregate alias="User" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+    </object>
+
+    <object class="dialBonusBalance" table="dialbonus_balance" extends="xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="value" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+
+        <aggregate alias="User" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+    </object>
+
+</model>

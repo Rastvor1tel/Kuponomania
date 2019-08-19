@@ -31,7 +31,7 @@
                 </div>
                 <div class="sidebar-body">
                     <div class="sidebar-body-title">
-                        <a href="#" class="sidebar-body-title-link">Бонусная программа</a>
+                        <a href="/personal/bonusnaya-programma/" class="sidebar-body-title-link">Бонусная программа</a>
                     </div>
                     <div class="sidebar-body-title">
                         <a href="#" class="sidebar-body-title-link">Партнерская программа</a>
