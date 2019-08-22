@@ -7,8 +7,8 @@ class DialBonus {
     function __construct(modX &$modx, array $config = array()) {
         $this->modx =& $modx;
 
-        $basePath = $this->modx->getOption('bonus.core_path', $config, $this->modx->getOption('core_path') . 'components/dialBonus/');
-        $assetsUrl = $this->modx->getOption('bonus.assets_url', $config, $this->modx->getOption('assets_url') . 'components/dialBonus/');
+        $basePath = $this->modx->getOption('bonus.core_path', $config, $this->modx->getOption('core_path') . 'components/dialbonus/');
+        $assetsUrl = $this->modx->getOption('bonus.assets_url', $config, $this->modx->getOption('assets_url') . 'components/dialbonus/');
         $this->config = array_merge(array(
             'basePath' => $basePath,
             'corePath' => $basePath,

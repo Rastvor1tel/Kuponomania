@@ -7,8 +7,8 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     public function initialize() {
         $this->dialbonus = new DialBonus($this->modx);
 
-        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr.css');
-        $this->addJavascript($this->dialbonus->config['jsUrl'] . 'mgr/11dialbonus.js');
+        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr/dialbonus.css');
+        $this->addJavascript($this->dialbonus->config['jsUrl'] . 'mgr/dialbonus.js');
         $this->addHtml('<script type="text/javascript">
         Ext.onReady(function() {
             DialBonus.config = ' . $this->modx->toJSON($this->dialbonus->config) . ';
@@ -26,7 +26,7 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     }
 }
 
-class IndexManagerController extends DialBonusBaseManagerController {
+class DialBonusIndexManagerController extends DialBonusBaseManagerController {
     public static function getDefaultController() {
         return 'home';
     }

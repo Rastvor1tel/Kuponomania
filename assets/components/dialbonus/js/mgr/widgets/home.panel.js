@@ -5,9 +5,9 @@ DialBonus.panel.Home = function (config) {
         baseCls: 'modx-formpanel',
         cls: 'container',
         items: [{
-            html: '<h2>' + _('dialbonus.management') + '</h2>'
-            , border: false
-            , cls: 'modx-page-header'
+            html: '<h2>' + _('dialbonus.management') + '</h2>',
+            border: false,
+            cls: 'modx-page-header'
         }, {
             xtype: 'modx-tabs',
             defaults: {border: false, autoHeight: true},
