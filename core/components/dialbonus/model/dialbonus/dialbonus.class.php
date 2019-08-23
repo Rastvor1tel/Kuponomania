@@ -63,6 +63,7 @@ class DialBonus {
             $manager = $this->modx->getManager();
             $manager->createObjectContainer('dialBonusBalance');
             $manager->createObjectContainer('dialBonusOperation');
+            $manager->createObjectContainer('dialBonusGroup');
         }
     }
 }

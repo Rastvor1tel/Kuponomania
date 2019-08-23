@@ -7,7 +7,7 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     public function initialize() {
         $this->dialbonus = new DialBonus($this->modx);
 
-        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr/dialbonus.css');
+        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr.css');
         $this->addJavascript($this->dialbonus->config['jsUrl'] . 'mgr/dialbonus.js');
         $this->addHtml('<script type="text/javascript">
         Ext.onReady(function() {
@@ -18,7 +18,7 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     }
 
     public function getLanguageTopics() {
-        return array('dialbonus:default');
+        return ['dialbonus:default'];
     }
 
     public function checkPermissions() {
@@ -26,7 +26,7 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     }
 }
 
-class DialBonusIndexManagerController extends DialBonusBaseManagerController {
+class IndexManagerController extends DialBonusBaseManagerController {
     public static function getDefaultController() {
         return 'home';
     }

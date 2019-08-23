@@ -12,9 +12,18 @@
 
     <object class="dialBonusBalance" table="dialbonus_balance" extends="xPDOSimpleObject">
         <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="user_name" dbtype="varchar" precision="256" phptype="string" null="true" default=""/>
         <field key="value" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+        <field key="bonus_group" dbtype="int" precision="10" phptype="integer" null="true" default="0"/>
 
-        <aggregate alias="User" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="UserId" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="UserName" class="modUser" local="user_name" foreign="username" cardinality="one" owner="foreign"/>
+        <aggregate alias="Group" class="dialBonusGroup" local="bonus_group" foreign="id" cardinality="one" owner="foreign"/>
+    </object>
+
+    <object class="dialBonusGroup" table="dialbonus_group" extends="xPDOSimpleObject">
+        <field key="order_sum" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+        <field key="discount_value" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
     </object>
 
 </model>

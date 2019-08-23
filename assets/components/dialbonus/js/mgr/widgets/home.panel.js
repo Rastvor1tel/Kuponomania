@@ -13,12 +13,28 @@ DialBonus.panel.Home = function (config) {
             defaults: {border: false, autoHeight: true},
             border: true,
             items: [{
-                title: _('dialbonus'),
+                title: _('dialbonus.balance'),
                 defaults: {autoHeight: true},
                 items: [{
-                    html: '<p>' + _('dialbonus.management_desc') + '</p>',
+                    html: '<p>' + _('dialbonus.balance_desc') + '</p>',
                     border: false,
                     bodyCssClass: 'panel-desc'
+                },{
+                    xtype: 'dialbonus-grid-balance',
+                    cls: 'main-wrapper',
+                    preventRender: true
+                }]
+            },{
+                title: _('dialbonus.groups'),
+                defaults: {autoHeight: true},
+                items: [{
+                    html: '<p>' + _('dialbonus.groups_desc') + '</p>',
+                    border: false,
+                    bodyCssClass: 'panel-desc'
+                },{
+                    xtype: 'dialbonus-grid-groups',
+                    cls: 'main-wrapper',
+                    preventRender: true
                 }]
             }]
         }]
