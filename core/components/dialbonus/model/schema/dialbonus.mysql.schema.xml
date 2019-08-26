@@ -12,7 +12,6 @@
 
     <object class="dialBonusBalance" table="dialbonus_balance" extends="xPDOSimpleObject">
         <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
-        <field key="user_name" dbtype="varchar" precision="256" phptype="string" null="true" default=""/>
         <field key="value" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
         <field key="bonus_group" dbtype="int" precision="10" phptype="integer" null="true" default="0"/>
 
@@ -22,8 +21,10 @@
     </object>
 
     <object class="dialBonusGroup" table="dialbonus_group" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="30" phptype="string" null="true" default=""/>
         <field key="order_sum" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
-        <field key="discount_value" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="bonus_from_order" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="bonus_on_order" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
     </object>
 
 </model>

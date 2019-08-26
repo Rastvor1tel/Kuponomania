@@ -11,7 +11,6 @@ $_lang['user_id'] = 'ID пользователя';
 $_lang['balance'] = 'Количество бонусов';
 $_lang['bonus_group'] = 'Бонусная группа';
 $_lang['order_sum'] = 'Сумма покупок';
-$_lang['discount_value'] = 'Процент оплаты заказа бонусами';
 
 $_lang['dialbonus.balance'] = 'Бонусный баланс';
 $_lang['dialbonus.balance_desc'] = 'Количество бонусов у каждого из пользователей';
@@ -19,4 +18,14 @@ $_lang['dialbonus.balance_update'] = 'Изменение баланса ';
 
 $_lang['dialbonus.groups'] = 'Бонусные группы';
 $_lang['dialbonus.groups_desc'] = 'Список бонусных групп';
-$_lang['dialbonus.group_update'] = 'Изменение группы ';
+$_lang['dialbonus.group_update'] = 'Изменение группы';
+$_lang['dialbonus.group_name'] = 'Название бонусной группы';
+$_lang['dialbonus.group_add'] = 'Добавить группу';
+$_lang['dialbonus.group_bonus_from_order'] = 'Процент начисления бонусов за заказ';
+$_lang['dialbonus.group_bonus_on_order'] = 'Процент оплаты заказа бонусами';
+
+$_lang['dialbonus.operations'] = 'История операций';
+$_lang['dialbonus.operations_desc'] = 'История операций с бонусами';
+$_lang['dialbonus.operation'] = 'Операция';
+$_lang['dialbonus.operation_date'] = 'Дата';
+$_lang['dialbonus.operation_type'] = 'Тип операции';

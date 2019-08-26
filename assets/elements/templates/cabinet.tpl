@@ -27,7 +27,6 @@
                     <div class="sidebar-body-title">
                         <a href="#" class="sidebar-body-title-link">Купоны</a>
                     </div>
-                    {'@FILE snippets/orders.php' | snippet}
                 </div>
                 <div class="sidebar-body">
                     <div class="sidebar-body-title">

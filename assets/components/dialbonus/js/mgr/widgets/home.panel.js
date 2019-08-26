@@ -36,6 +36,18 @@ DialBonus.panel.Home = function (config) {
                     cls: 'main-wrapper',
                     preventRender: true
                 }]
+            },{
+                title: _('dialbonus.operations'),
+                defaults: {autoHeight: true},
+                items: [{
+                    html: '<p>' + _('dialbonus.operations_desc') + '</p>',
+                    border: false,
+                    bodyCssClass: 'panel-desc'
+                },{
+                    xtype: 'dialbonus-grid-operations',
+                    cls: 'main-wrapper',
+                    preventRender: true
+                }]
             }]
         }]
     });

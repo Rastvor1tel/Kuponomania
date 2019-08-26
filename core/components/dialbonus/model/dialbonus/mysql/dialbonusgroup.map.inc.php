@@ -10,11 +10,21 @@ $xpdo_meta_map['dialBonusGroup']= array (
   ),
   'fields' => 
   array (
+    'name' => '',
     'order_sum' => 0.0,
-    'discount_value' => NULL,
+    'bonus_from_order' => NULL,
+    'bonus_on_order' => NULL,
   ),
   'fieldMeta' => 
   array (
+    'name' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '30',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
     'order_sum' => 
     array (
       'dbtype' => 'decimal',
@@ -23,7 +33,15 @@ $xpdo_meta_map['dialBonusGroup']= array (
       'null' => true,
       'default' => 0.0,
     ),
-    'discount_value' => 
+    'bonus_from_order' => 
+    array (
+      'dbtype' => 'int',
+      'precision' => '10',
+      'attributes' => 'unsigned',
+      'phptype' => 'integer',
+      'null' => false,
+    ),
+    'bonus_on_order' => 
     array (
       'dbtype' => 'int',
       'precision' => '10',

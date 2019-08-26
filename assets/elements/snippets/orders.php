@@ -1,21 +1,12 @@
 <?php
 $userId = $modx->user->get('id');
 
-$query = $modx->newQuery('msOrder');
-$query->select([
-    'msOrder.*',
-    'msOrderProduct.product_id',
-    'msOrderProduct.count',
-    'modResource.unpub_date'
-]);
-$query->where([
-    'msOrder.user_id' => $userId
-]);
-$query->innerJoin('msOrderProduct', 'msOrderProduct', 'msOrder.id = msOrderProduct.order_id');
-$query->innerJoin('modResource', 'modResource', 'msOrderProduct.product_id = modResource.id');
-$query->prepare();
-$query->stmt->execute();
-$result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+$bonusCorePath = $modx->getOption('bonus.core_path');
+$bonus = $modx->getService('dialbonus', 'DialBonus', $bonusCorePath . 'model/dialbonus/', $scriptProperties);
+$bonus->checkTable();
+
+$result = $bonus->getUserOrdersList($userId);
+
 $all = 0;
 $expired = 0;
 foreach ($result as $item) {

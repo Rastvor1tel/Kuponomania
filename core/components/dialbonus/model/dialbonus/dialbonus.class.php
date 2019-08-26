@@ -23,12 +23,12 @@ class DialBonus {
         $this->modx->addPackage('dialbonus', $this->config['modelPath']);
     }
 
-    public function getChunk($name,$properties = array()) {
+    public function getChunk($name, $properties = array()) {
         $chunk = null;
         if (!isset($this->chunks[$name])) {
             $chunk = $this->_getTplChunk($name);
             if (empty($chunk)) {
-                $chunk = $this->modx->getObject('modChunk',array('name' => $name));
+                $chunk = $this->modx->getObject('modChunk', array('name' => $name));
                 if ($chunk == false) return false;
             }
             $this->chunks[$name] = $chunk->getContent();
@@ -41,19 +41,19 @@ class DialBonus {
         return $chunk->process($properties);
     }
 
-    private function _getTplChunk($name,$postfix = '.chunk.tpl') {
+    private function _getTplChunk($name, $postfix = '.chunk.tpl') {
         $chunk = false;
-        $f = $this->config['chunksPath'].strtolower($name).$postfix;
+        $f = $this->config['chunksPath'] . strtolower($name) . $postfix;
         if (file_exists($f)) {
             $o = file_get_contents($f);
             $chunk = $this->modx->newObject('modChunk');
-            $chunk->set('name',$name);
+            $chunk->set('name', $name);
             $chunk->setContent($o);
         }
         return $chunk;
     }
 
-    function checkTable() {
+    public function checkTable() {
         $query = $this->modx->newQuery('dialBonusBalance');
         $query->select(['dialBonusBalance.*']);
         $query->prepare();
@@ -65,5 +65,76 @@ class DialBonus {
             $manager->createObjectContainer('dialBonusOperation');
             $manager->createObjectContainer('dialBonusGroup');
         }
+    }
+
+    public function getUserBalanceData($userId) {
+        $query = $this->modx->newQuery('dialBonusBalance');
+        $query->select(['dialBonusBalance.*']);
+        $query->where([
+            'dialBonusBalance.user_id' => $userId
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getBonusGroupList() {
+        $query = $this->modx->newQuery('dialBonusGroup');
+        $query->select(['dialBonusGroup.*']);
+        $query->sortby('order_sum', 'ASC');
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getUserOrdersList ($userId) {
+        $query = $this->modx->newQuery('msOrder');
+        $query->select([
+            'msOrder.*',
+            'msOrderProduct.product_id',
+            'msOrderProduct.count',
+            'modResource.unpub_date'
+        ]);
+        $query->where([
+            'msOrder.user_id' => $userId
+        ]);
+        $query->innerJoin('msOrderProduct', 'msOrderProduct', 'msOrder.id = msOrderProduct.order_id');
+        $query->innerJoin('modResource', 'modResource', 'msOrderProduct.product_id = modResource.id');
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getUserOrdersSum ($userId) {
+        $result = 0;
+        $orderList = $this->getUserOrdersList($userId);
+        foreach ($orderList as $orderItem) {
+            $result += $orderItem['cost'];
+        }
+        return $result;
+    }
+
+    public function bonusLvlUp ($userId) {
+        $bonusGroups = $this->getBonusGroupList();
+        $sum = $this->getUserOrdersSum($userId);
+        foreach ($bonusGroups as $group) {
+            if ($group['order_sum'] >= $sum) {
+                $query = $this->modx->newQuery('dialBonusBalance');
+                $query->command('update');
+                $query->set([
+                    'bonus_group' => $group['id']
+                ]);
+                $query->where([
+                    'user_id' => $userId
+                ]);
+                $query->prepare();
+                $query->stmt->execute();
+                break;
+            }
+        }
+        return;
     }
 }

@@ -10,6 +10,7 @@ class DialBonusHomeManagerController extends DialBonusBaseManagerController {
     public function loadCustomCssJs() {
         $this->addJavascript($this->dialbonus->config['jsUrl'].'mgr/widgets/balance.grid.js');
         $this->addJavascript($this->dialbonus->config['jsUrl'].'mgr/widgets/groups.grid.js');
+        $this->addJavascript($this->dialbonus->config['jsUrl'].'mgr/widgets/operations.grid.js');
         $this->addJavascript($this->dialbonus->config['jsUrl'] . 'mgr/widgets/home.panel.js');
         $this->addLastJavascript($this->dialbonus->config['jsUrl'] . 'mgr/sections/index.js');
     }

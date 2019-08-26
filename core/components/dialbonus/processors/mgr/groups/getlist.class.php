@@ -2,7 +2,7 @@
 class DialBonusGetListProcessor extends modObjectGetListProcessor {
     public $classKey = 'dialBonusGroup';
     public $languageTopics = ['dialbonus:default'];
-    public $defaultSortField = 'id';
+    public $defaultSortField = 'order_sum';
     public $defaultSortDirection = 'ASC';
     public $objectType = 'dialbonus.groups';
 
