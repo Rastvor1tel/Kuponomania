@@ -2,7 +2,7 @@
 $userId = $modx->user->get('id');
 
 $bonusCorePath = $modx->getOption('bonus.core_path');
-$bonus = $modx->getService('dialbonus', 'DialBonus', $bonusCorePath . 'model/dialbonus/', $scriptProperties);
+$bonus = $modx->getService('dialbonus', 'DialBonus', $bonusCorePath . 'model/dialbonus/');
 $bonus->checkTable();
 
 $result = $bonus->getUserOrdersList($userId);

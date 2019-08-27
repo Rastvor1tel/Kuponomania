@@ -28,8 +28,11 @@ class DialBonus {
         if (!isset($this->chunks[$name])) {
             $chunk = $this->_getTplChunk($name);
             if (empty($chunk)) {
-                $chunk = $this->modx->getObject('modChunk', array('name' => $name));
-                if ($chunk == false) return false;
+                $chunk = $this->modx->getObject('modChunk',
+                    array('name' => $name));
+                if ($chunk == false) {
+                    return false;
+                }
             }
             $this->chunks[$name] = $chunk->getContent();
         } else {
@@ -67,16 +70,27 @@ class DialBonus {
         }
     }
 
-    public function getUserBalanceData($userId) {
+    private function setUserBonusBalanceField($userId, $field, $value) {
         $query = $this->modx->newQuery('dialBonusBalance');
-        $query->select(['dialBonusBalance.*']);
+        $query->command('update');
+        $query->set([
+            $field => $value
+        ]);
         $query->where([
-            'dialBonusBalance.user_id' => $userId
+            'user_id' => $userId
         ]);
         $query->prepare();
         $query->stmt->execute();
-        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
+    }
+
+    private function addBonusOperation($userId, $bonusValue, $type) {
+        $query = $this->modx->newObject('dialBonusOperation', [
+            'user_id' => $userId,
+            'date' => date('Y-m-d H:i:s'),
+            'value' => $bonusValue,
+            'type' => $type
+        ]);
+        $query->save();
     }
 
     public function getBonusGroupList() {
@@ -89,7 +103,58 @@ class DialBonus {
         return $result;
     }
 
-    public function getUserOrdersList ($userId) {
+    public function getUserBalanceData($userId) {
+        $query = $this->modx->newQuery('dialBonusBalance');
+        $query->select(['dialBonusBalance.*']);
+        $query->where([
+            'dialBonusBalance.user_id' => $userId
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+        return $result;
+    }
+
+    public function getUserBonusBalance($userId) {
+        $userData = $this->getUserBalanceData($userId);
+        $result = $userData['value'];
+        return $result;
+    }
+
+    public function getUserBonusHistory($userId) {
+        $query = $this->modx->newQuery('dialBonusOperation');
+        $query->select(['dialBonusOperation.*']);
+        $query->sortby('date', 'DESC');
+        $query->where([
+            'user_id' => $userId
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getUserBonusGroup($groupId) {
+        $query = $this->modx->newQuery('dialBonusGroup');
+        $query->select(['dialBonusGroup.*']);
+        $query->sortby('order_sum', 'ASC');
+        $query->where([
+            'id' => $groupId
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+        return $result;
+    }
+
+    public function getUserBonusModifier($userId) {
+        $userData = $this->getUserBalanceData($userId);
+        $bonusGroup = $this->getUserBonusGroup($userData['bonus_group']);
+        $result = $bonusGroup['bonus_from_order'] / 100;
+        return $result;
+    }
+
+    public function getUserOrdersList($userId) {
         $query = $this->modx->newQuery('msOrder');
         $query->select([
             'msOrder.*',
@@ -108,7 +173,7 @@ class DialBonus {
         return $result;
     }
 
-    public function getUserOrdersSum ($userId) {
+    public function getUserOrdersSum($userId) {
         $result = 0;
         $orderList = $this->getUserOrdersList($userId);
         foreach ($orderList as $orderItem) {
@@ -117,24 +182,25 @@ class DialBonus {
         return $result;
     }
 
-    public function bonusLvlUp ($userId) {
+    public function setBonusLvlUp($userId) {
         $bonusGroups = $this->getBonusGroupList();
         $sum = $this->getUserOrdersSum($userId);
         foreach ($bonusGroups as $group) {
             if ($group['order_sum'] >= $sum) {
-                $query = $this->modx->newQuery('dialBonusBalance');
-                $query->command('update');
-                $query->set([
-                    'bonus_group' => $group['id']
-                ]);
-                $query->where([
-                    'user_id' => $userId
-                ]);
-                $query->prepare();
-                $query->stmt->execute();
+                $this->setUserBonusBalanceField($userId, 'bonus_group', $group['id']);
                 break;
             }
         }
+        return;
+    }
+
+    public function setBonusBalance($orderPrice, $userId) {
+        $bonusModifier = $this->getUserBonusModifier($userId);
+        $bonusFromOrder = $orderPrice * $bonusModifier;
+        $balanceData = $this->getUserBalanceData($userId);
+        $newBalance = $balanceData['value'] + $bonusFromOrder;
+        $this->setUserBonusBalanceField($userId, 'value', $newBalance);
+        $this->addBonusOperation($userId, $bonusFromOrder, 'writeon');
         return;
     }
 }

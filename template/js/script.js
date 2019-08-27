@@ -1,7 +1,3 @@
-$(function () {
-    $('.popup-modal').magnificPopup({});
-});
-
 window.onload = function () {
     document.getElementById('toggler').onclick = function () {
         openbox('box', this);

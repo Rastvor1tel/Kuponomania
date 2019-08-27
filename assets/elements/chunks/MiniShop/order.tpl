@@ -8,9 +8,7 @@
                         {('ms2_frontend_' ~ $field) | lexicon} <span class="required-star">*</span>
                     </label>
                     <div class="col-md-8">
-                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}"
-                               name="{$field}" value="{$form[$field]}"
-                               class="form-control{($field in list $errors) ? ' error' : ''}">
+                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="{$field}" value="{$form[$field]}" class="form-control{($field in list $errors) ? ' error' : ''}">
                     </div>
                 </div>
             {/foreach}
@@ -20,8 +18,7 @@
                     {'ms2_frontend_comment' | lexicon} <span class="required-star">*</span>
                 </label>
                 <div class="col-md-8">
-                    <textarea name="comment" id="comment" placeholder="{'ms2_frontend_comment' | lexicon}"
-                              class="form-control{('comment' in list $errors) ? ' error' : ''}">{$form.comment}</textarea>
+                    <textarea name="comment" id="comment" placeholder="{'ms2_frontend_comment' | lexicon}" class="form-control{('comment' in list $errors) ? ' error' : ''}">{$form.comment}</textarea>
                 </div>
             </div>
         </div>
@@ -60,9 +57,7 @@
                         {var $checked = !($order.delivery in keys $deliveries) && $index == 0 || $delivery.id == $order.delivery}
                         <div class="checkbox">
                             <label class="col-form-label delivery input-parent">
-                                <input type="radio" name="delivery" value="{$delivery.id}" id="delivery_{$delivery.id}"
-                                       data-payments="{$delivery.payments | json_encode}"
-                                        {$checked ? 'checked' : ''}>
+                                <input type="radio" name="delivery" value="{$delivery.id}" id="delivery_{$delivery.id}" data-payments="{$delivery.payments | json_encode}"{$checked ? 'checked' : ''}>
                                 {if $delivery.logo?}
                                     <img src="{$delivery.logo}" alt="{$delivery.name}" title="{$delivery.name}"/>
                                 {else}
@@ -81,16 +76,31 @@
         </div>
 
         <div class="col-12 col-md-6">
-            <h4>{'ms2_frontend_address' | lexicon}:</h4>
+            <h4>Использование бонусов:</h4>
+            <p>Доступно: {'@FILE snippets/DialBonus/bonusBalance.php' | snippet} бонусов.</p>
+            <div class="form-group row input-parent">
+                <label class="col-md-4 col-form-label" for="bonuspayed">Оплатить используя бонусы</label>
+                <div class="col-md-8">
+                    <input type="checkbox" id="bonuspayed" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="extfld_bonuspayed">
+                </div>
+            </div>
+            <div class="form-group row input-parent">
+                <label class="col-md-4 col-form-label" for="bonusvalue">Количество бонусов</label>
+                <div class="col-md-8">
+                    <input type="number" max="{$order.cost / 2}" id="bonusvalue" placeholder="0" name="extfld_bonusvalue" class="form-control">
+                </div>
+            </div>
+            {*<label><input type="checkbox" name="extfld_bonuspayed">Оплатить используя бонусы</label>
+            <label><input type="number" max="{$order.cost / 2}" name="extfld_bonusvalue">Количество бонусов</label>*}
+
+            {*<h4>{'ms2_frontend_address' | lexicon}:</h4>
             {foreach ['index','region','city'] as $field}
                 <div class="form-group row input-parent">
                     <label class="col-md-4 col-form-label" for="{$field}">
                         {('ms2_frontend_' ~ $field) | lexicon} <span class="required-star">*</span>
                     </label>
                     <div class="col-md-8">
-                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}"
-                               name="{$field}" value="{$form[$field]}"
-                               class="form-control{($field in list $errors) ? ' error' : ''}">
+                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="{$field}" value="{$form[$field]}" class="form-control{($field in list $errors) ? ' error' : ''}">
                     </div>
                 </div>
             {/foreach}
@@ -100,13 +110,11 @@
                 <div class="col-md-8 row no-gutters">
                     {foreach ['street' => 6, 'building' => 3, 'room' => 3] as $field => $col}
                         <div class="col-{$col}">
-                            <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}"
-                                   name="{$field}" value="{$form[$field]}"
-                                   class="form-control{($field in list $errors) ? ' error' : ''}">
+                            <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="{$field}" value="{$form[$field]}" class="form-control{($field in list $errors) ? ' error' : ''}">
                         </div>
                     {/foreach}
                 </div>
-            </div>
+            </div>*}
         </div>
 
     </div>

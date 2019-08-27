@@ -26,11 +26,12 @@
                 <div class="sidebar-body sidebar-body--dotted">
                     <div class="sidebar-body-title">
                         <a href="#" class="sidebar-body-title-link">Купоны</a>
+                        {'@FILE snippets/orders.php' | snippet}
                     </div>
                 </div>
                 <div class="sidebar-body">
                     <div class="sidebar-body-title">
-                        <a href="/personal/bonusnaya-programma/" class="sidebar-body-title-link">Бонусная программа</a>
+                        <a href="{35 | url}" class="sidebar-body-title-link">Бонусная программа</a>
                     </div>
                     <div class="sidebar-body-title">
                         <a href="#" class="sidebar-body-title-link">Партнерская программа</a>

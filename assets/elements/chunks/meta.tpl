@@ -5,7 +5,7 @@
 {$modx->regClientCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')}
 {$modx->regClientCSS('/template/css/style.css')}
 {$modx->regClientCSS('/template/css/custom.css')}
-{$modx->regClientScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')}
+{$modx->regClientStartupScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')}
 {$modx->regClientScript('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')}
 {$modx->regClientScript('//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')}
 {$modx->regClientScript('//yastatic.net/share2/share.js')}

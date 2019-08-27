@@ -28,14 +28,12 @@ DialBonus.grid.DialBonus = function(config) {
             header: _('dialbonus.operation'),
             dataIndex: 'value',
             sortable: true,
-            width: 100,
-            editor: { xtype: 'textfield' }
+            width: 100
         },{
             header: _('dialbonus.operation_type'),
             dataIndex: 'type',
             sortable: true,
-            width: 100,
-            editor: { xtype: 'textfield' }
+            width: 100
         }],
         tbar:[{
             xtype: 'textfield',

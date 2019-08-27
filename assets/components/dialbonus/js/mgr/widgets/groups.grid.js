@@ -9,8 +9,6 @@ DialBonus.grid.DialBonus = function (config) {
         remoteSort: true,
         anchor: '97%',
         autoExpandColumn: 'order_sum',
-        save_action: 'mgr/groups/updateFromGrid',
-        autosave: true,
         columns: [{
             header: _('id'),
             dataIndex: 'id',
@@ -20,26 +18,22 @@ DialBonus.grid.DialBonus = function (config) {
             header: _('dialbonus.group_name'),
             dataIndex: 'name',
             sortable: true,
-            width: 100,
-            editor: {xtype: 'textfield'}
+            width: 100
         }, {
             header: _('order_sum'),
             dataIndex: 'order_sum',
             sortable: true,
-            width: 100,
-            editor: {xtype: 'textfield'}
+            width: 100
         }, {
             header: _('dialbonus.group_bonus_from_order'),
             dataIndex: 'bonus_from_order',
             sortable: true,
-            width: 100,
-            editor: {xtype: 'textfield'}
-        },{
+            width: 100
+        }, {
             header: _('dialbonus.group_bonus_on_order'),
             dataIndex: 'bonus_on_order',
             sortable: true,
-            width: 100,
-            editor: {xtype: 'textfield'}
+            width: 100
         }],
         tbar: [{
             xtype: 'textfield',
@@ -65,7 +59,7 @@ DialBonus.grid.DialBonus = function (config) {
                     scope: this
                 }
             }
-        }, '->',{
+        }, '->', {
             xtype: 'button',
             cls: 'primary-button',
             id: 'dialbonus-grout-button-add',
@@ -161,12 +155,12 @@ DialBonus.window.AddGroup = function (config) {
             fieldLabel: _('order_sum'),
             name: 'order_sum',
             anchor: '100%'
-        },{
+        }, {
             xtype: 'textfield',
             fieldLabel: _('dialbonus.group_bonus_from_order'),
             name: 'bonus_from_order',
             anchor: '100%'
-        },{
+        }, {
             xtype: 'textfield',
             fieldLabel: _('dialbonus.group_bonus_on_order'),
             name: 'bonus_on_order',
@@ -191,15 +185,20 @@ DialBonus.window.UpdateGroup = function (config) {
             name: 'id'
         }, {
             xtype: 'textfield',
+            fieldLabel: _('dialbonus.group_name'),
+            name: 'name',
+            anchor: '100%'
+        }, {
+            xtype: 'textfield',
             fieldLabel: _('order_sum'),
             name: 'order_sum',
             anchor: '100%'
-        },{
+        }, {
             xtype: 'textfield',
             fieldLabel: _('dialbonus.group_bonus_from_order'),
             name: 'bonus_from_order',
             anchor: '100%'
-        },{
+        }, {
             xtype: 'textfield',
             fieldLabel: _('dialbonus.group_bonus_on_order'),
             name: 'bonus_on_order',
