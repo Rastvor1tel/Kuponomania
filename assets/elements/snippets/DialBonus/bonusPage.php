@@ -24,9 +24,9 @@ foreach ($bonusGroups as $key => $group) {
         $placeholders['cur_group_border'] = (int)$group['order_sum'];
         $placeholders['cur_group_discount'] = $group['bonus_on_order'];
         $placeholders['sum_to_next_group'] = $group['order_sum'] - $userOrderSum;
-        $curGroupKey = $key;
+        $curGroupKey = $key + 1;
     }
-    if ($curGroupKey == $key-1) {
+    if (($curGroupKey == $key) && ($curGroupKey > 0)) {
         $placeholders['next_group_name'] = $group['name'];
         $placeholders['next_group_discount'] = $group['bonus_on_order'] - $placeholders['cur_group_discount'];
     }

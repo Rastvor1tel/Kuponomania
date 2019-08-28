@@ -27,10 +27,10 @@
     color: #333;
 }
 
-.bonus-table__line.writeon {
+.bonus-table__line.write-on {
     background: #c8feb1;
 }
 
-.bonus-table__line.writeoff {
+.bonus-table__line.write-off {
     background: #ffcbcb;
 }

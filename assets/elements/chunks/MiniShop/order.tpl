@@ -1,3 +1,4 @@
+{$modx->regClientScript('/template/js/components/order.js')}
 <form class="ms2_form" id="msOrder" method="post">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -75,48 +76,23 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" class="bonus-block">
             <h4>Использование бонусов:</h4>
-            <p>Доступно: {'@FILE snippets/DialBonus/bonusBalance.php' | snippet} бонусов.</p>
+            <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span> бонусов.</p>
+            <p>Вы можете оплатитьбонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
             <div class="form-group row input-parent">
                 <label class="col-md-4 col-form-label" for="bonuspayed">Оплатить используя бонусы</label>
                 <div class="col-md-8">
-                    <input type="checkbox" id="bonuspayed" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="extfld_bonuspayed">
+                    <input type="checkbox" id="bonuspayed" value="Y" name="extfld_bonuspayed">
                 </div>
             </div>
             <div class="form-group row input-parent">
                 <label class="col-md-4 col-form-label" for="bonusvalue">Количество бонусов</label>
                 <div class="col-md-8">
-                    <input type="number" max="{$order.cost / 2}" id="bonusvalue" placeholder="0" name="extfld_bonusvalue" class="form-control">
+                    <input type="number" max="{'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost]}" data-modifier="{'@FILE snippets/DialBonus/bonusDiscount.php' | snippet}" id="bonusvalue" placeholder="0" name="extfld_bonusvalue" class="form-control">
                 </div>
             </div>
-            {*<label><input type="checkbox" name="extfld_bonuspayed">Оплатить используя бонусы</label>
-            <label><input type="number" max="{$order.cost / 2}" name="extfld_bonusvalue">Количество бонусов</label>*}
-
-            {*<h4>{'ms2_frontend_address' | lexicon}:</h4>
-            {foreach ['index','region','city'] as $field}
-                <div class="form-group row input-parent">
-                    <label class="col-md-4 col-form-label" for="{$field}">
-                        {('ms2_frontend_' ~ $field) | lexicon} <span class="required-star">*</span>
-                    </label>
-                    <div class="col-md-8">
-                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="{$field}" value="{$form[$field]}" class="form-control{($field in list $errors) ? ' error' : ''}">
-                    </div>
-                </div>
-            {/foreach}
-            <div class="form-group row input-parent">
-                <label class="col-md-4 col-form-label" for="street">
-                    {'ms2_frontend_street' | lexicon}</label> <span class="required-star">*</span>
-                <div class="col-md-8 row no-gutters">
-                    {foreach ['street' => 6, 'building' => 3, 'room' => 3] as $field => $col}
-                        <div class="col-{$col}">
-                            <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}" name="{$field}" value="{$form[$field]}" class="form-control{($field in list $errors) ? ' error' : ''}">
-                        </div>
-                    {/foreach}
-                </div>
-            </div>*}
         </div>
-
     </div>
 
     <button type="button" name="ms2_action" value="order/clean" class="btn btn-danger ms2_link">
@@ -127,7 +103,7 @@
 
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-end">
         <h4 class="mb-md-0">{'ms2_frontend_order_cost' | lexicon}:</h4>
-        <h3 class="mb-md-0 ml-md-2"><span id="ms2_order_cost">{$order.cost ?: 0}</span> {'ms2_frontend_currency' | lexicon}</h3>
+        <h3 class="mb-md-0 ml-md-2"><span id="ms2_order_cost">{$order.cost}</span> {'ms2_frontend_currency' | lexicon}</h3>
 
         <button type="submit" name="ms2_action" value="order/submit" class="btn btn-lg btn-primary ml-md-2 ms2_link">
             {'ms2_frontend_order_submit' | lexicon}

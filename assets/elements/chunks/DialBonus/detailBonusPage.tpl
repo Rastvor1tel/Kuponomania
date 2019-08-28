@@ -17,7 +17,9 @@
     <div class="client-info__right">
         <div class="client-info__bonus-info">
             <p>Вы можете оплатить купон бонусами до {$cur_group_discount}% от стоимости заказа.</p>
-            <p>Для получения статуса "{$next_group_name}" необходимо купить еще на {$sum_to_next_group} руб. Следующий статус увеличит вашу скидку еще на {$next_group_discount}%.</p>
+            {if $next_group_name}
+                <p>Для получения статуса "{$next_group_name}" необходимо купить еще на {$sum_to_next_group} руб. Следующий статус увеличит вашу скидку еще на {$next_group_discount}%.</p>
+            {/if}
         </div>
     </div>
     <a href="{36 | url}" class="about-status">Подробнее о статусах</a>

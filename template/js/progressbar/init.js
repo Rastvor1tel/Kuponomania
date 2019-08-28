@@ -9,6 +9,8 @@ $(function(){
     current = $('#money-progress').data('current'),
 
     animateRate = current / to;
+    animateRate = animateRate < 1 ? animateRate : 1;
+
     console.log(animateRate);
 
     var lineBar = new ProgressBar.Line('#money-progress', {

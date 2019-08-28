@@ -37,8 +37,7 @@
                                 <form method="post" class="ms2_form form-inline" role="form">
                                     <input type="hidden" name="key" value="{$product.key}"/>
                                     <div class="form-group">
-                                        <input type="number" name="count" value="{$product.count}"
-                                               class="input-sm form-control"/>
+                                        <input type="number" name="count" value="{$product.count}" class="product-quantity input-sm form-control"/>
                                         <span class="hidden-xs">{'ms2_frontend_count_unit' | lexicon}</span>
                                         <button class="btn btn-default" type="submit" name="ms2_action" value="cart/change">
                                             <i class="glyphicon glyphicon-refresh">ок</i>

@@ -12,7 +12,7 @@ $bonusHistory = $bonus->getUserBonusHistory($userId);
 $placeholders = [];
 
 foreach ($bonusHistory as $item) {
-    if ($item['type'] == 'writeon')
+    if ($item['type'] == 'write-on')
         $itemName = 'Зачисление';
     else
         $itemName = 'Списание';
