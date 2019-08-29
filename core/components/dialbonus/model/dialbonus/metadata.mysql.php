@@ -6,5 +6,6 @@ $xpdo_meta_map = array (
     0 => 'dialBonusOperation',
     1 => 'dialBonusBalance',
     2 => 'dialBonusGroup',
+    3 => 'dialBonusCode',
   ),
 );

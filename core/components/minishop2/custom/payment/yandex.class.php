@@ -58,13 +58,6 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
         return $payment;
     }
 
-    /**
-     * Returns a direct link for continue payment process of existing order
-     *
-     * @param msOrder $order
-     *
-     * @return string
-     */
     public function getPaymentLink(msOrder $order) {
         $orderId = $order->get('id');
         $orderSumm = $order->get('cost');

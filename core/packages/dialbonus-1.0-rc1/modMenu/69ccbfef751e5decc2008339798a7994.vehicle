@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '971274966cf13157ee28668ba29a3932' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"dialbonus","controller":"controllers\\/home","haslayout":1,"lang_topics":"dialbonus:default","assets":"","help_url":"","parent":0}',
+        'guid' => '17f8a083563fd5210fbee57e307147d8',
+        'native_key' => 1,
+        'signature' => 'a38bf6056df1b7aaf9abc4d9a33446d4',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'dialbonus',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fb6ce177f0a30c93cbf7f731a91b1d53',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '69ccbfef751e5decc2008339798a7994',
+  'native_key' => 'dialbonus',
+  'object' => '{"text":"dialbonus","parent":"components","action":1,"description":"dialbonus.desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

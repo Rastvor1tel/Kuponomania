@@ -27,4 +27,11 @@
         <field key="bonus_on_order" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
     </object>
 
+    <object class="dialBonusCode" table="dialbonus_code" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="30" phptype="string" null="true" default=""/>
+        <field key="value" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+        <field key="multiple" dbtype="tinyint" precision="1" phptype="boolean" null="false" default="0" />
+        <field key="active_to" dbtype="datetime" phptype="datetime" null="true"/>
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="false" default="0" />
+    </object>
 </model>

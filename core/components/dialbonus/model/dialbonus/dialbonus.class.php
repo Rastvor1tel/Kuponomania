@@ -34,6 +34,7 @@ class DialBonus {
             $manager->createObjectContainer('dialBonusBalance');
             $manager->createObjectContainer('dialBonusOperation');
             $manager->createObjectContainer('dialBonusGroup');
+            $manager->createObjectContainer('dialBonusCode');
         }
     }
 

@@ -1,17 +1,17 @@
 <?php
 class DialBonusGetListProcessor extends modObjectGetListProcessor {
-    public $classKey = 'dialBonusGroup';
+    public $classKey = 'dialBonusCode';
     public $languageTopics = ['dialbonus:default'];
-    public $defaultSortField = 'order_sum';
+    public $defaultSortField = 'id';
     public $defaultSortDirection = 'ASC';
-    public $objectType = 'dialbonus.group';
+    public $objectType = 'dialbonus.code';
 
     public function prepareQueryBeforeCount(xPDOQuery $c) {
         $query = $this->getProperty('query');
         if (!empty($query)) {
             $c->where(array(
-                'order_sum:LIKE' => '%'.$query.'%',
-                'OR:discount_value:LIKE' => '%'.$query.'%',
+                'name:LIKE' => '%'.$query.'%',
+                'OR:value:LIKE' => '%'.$query.'%',
             ));
         }
         return $c;

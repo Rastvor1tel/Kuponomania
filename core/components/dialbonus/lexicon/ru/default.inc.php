@@ -29,3 +29,13 @@ $_lang['dialbonus.operations_desc'] = 'История операций с бон
 $_lang['dialbonus.operation'] = 'Операция';
 $_lang['dialbonus.operation_date'] = 'Дата';
 $_lang['dialbonus.operation_type'] = 'Тип операции';
+
+$_lang['dialbonus.codes'] = 'Бонусные коды';
+$_lang['dialbonus.codes_desc'] = 'Список бонусных кодов';
+$_lang['dialbonus.code_update'] = 'Изменение кода';
+$_lang['dialbonus.code_add'] = 'Добавить код';
+$_lang['dialbonus.code_name'] = 'Бонусный код';
+$_lang['dialbonus.code_value'] = 'Количество бонусов';
+$_lang['dialbonus.code_multiple'] = 'Многоразовый';
+$_lang['dialbonus.code_active_to'] = 'Действителен до';
+$_lang['dialbonus.code_active'] = 'Активен';

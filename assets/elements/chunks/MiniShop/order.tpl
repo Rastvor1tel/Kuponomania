@@ -1,4 +1,5 @@
-{$modx->regClientScript('/template/js/components/order.js')}
+{$modx->regClientCSS($_modx->config['bonus.assets_url'] ~ 'css/web/order.css')}
+{$modx->regClientScript($_modx->config['bonus.assets_url'] ~ 'js/web/order.js')}
 <form class="ms2_form" id="msOrder" method="post">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -76,20 +77,20 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6" class="bonus-block">
-            <h4>Использование бонусов:</h4>
-            <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span> бонусов.</p>
-            <p>Вы можете оплатитьбонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
-            <div class="form-group row input-parent">
-                <label class="col-md-4 col-form-label" for="bonuspayed">Оплатить используя бонусы</label>
-                <div class="col-md-8">
-                    <input type="checkbox" id="bonuspayed" value="Y" name="extfld_bonuspayed">
-                </div>
-            </div>
-            <div class="form-group row input-parent">
-                <label class="col-md-4 col-form-label" for="bonusvalue">Количество бонусов</label>
-                <div class="col-md-8">
-                    <input type="number" max="{'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost]}" data-modifier="{'@FILE snippets/DialBonus/bonusDiscount.php' | snippet}" id="bonusvalue" placeholder="0" name="extfld_bonusvalue" class="form-control">
+        <div class="col-12 col-md-6" id="bonus-block">
+            <div class="bonus-block bonus-ajax-content">
+                <h4>Использование бонусов:</h4>
+                <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span> бонусов.</p>
+                <p>Вы можете оплатитьбонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
+                <div class="bonus-block__form">
+                    <div class="bonus-block__input">
+                        <label for="bonuspayed"><span class="btn btn-success btn-lg">Оплатить используя бонусы</span></label>
+                        <input type="checkbox" class="hidden" id="bonuspayed" value="Y" name="extfld_bonuspayed">
+                    </div>
+                    <div class="bonus-block__input bonus-value">
+                        <label for="bonusvalue">Количество бонусов</label>
+                        <input type="number" max="{'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost]}" data-modifier="{'@FILE snippets/DialBonus/bonusDiscount.php' | snippet}" id="bonusvalue" placeholder="0" name="extfld_bonusvalue" class="form-control">
+                    </div>
                 </div>
             </div>
         </div>

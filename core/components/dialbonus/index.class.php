@@ -7,7 +7,7 @@ abstract class DialBonusBaseManagerController extends modExtraManagerController 
     public function initialize() {
         $this->dialbonus = new DialBonus($this->modx);
 
-        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr.css');
+        $this->addCss($this->dialbonus->config['cssUrl'] . 'mgr/dialbonus.css');
         $this->addJavascript($this->dialbonus->config['jsUrl'] . 'mgr/dialbonus.js');
         $this->addHtml('<script type="text/javascript">
         Ext.onReady(function() {

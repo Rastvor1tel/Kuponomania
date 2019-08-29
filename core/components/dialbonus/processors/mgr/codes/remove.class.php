@@ -1,7 +1,7 @@
 <?php
 class DialBonusRemoveProcessor extends modObjectRemoveProcessor {
-    public $classKey = 'dialBonusGroup';
+    public $classKey = 'dialBonusCode';
     public $languageTopics = ['dialbonus:default'];
-    public $objectType = 'dialbonus.group';
+    public $objectType = 'dialbonus.code';
 }
 return 'DialBonusRemoveProcessor';

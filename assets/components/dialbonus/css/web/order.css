@@ -1,0 +1,18 @@
+.bonus-block__form {
+    height: 150px;
+}
+
+.bonus-block__input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bonus-block__input label, .bonus-block__input input {
+    margin: 0;
+    padding: 0;
+}
+
+.bonus-value {
+    display: none;
+}
