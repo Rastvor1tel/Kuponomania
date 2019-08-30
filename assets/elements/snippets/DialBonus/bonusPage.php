@@ -1,6 +1,6 @@
 <?php
 $modx->regClientScript($modx->getOption('bonus.assets_url') . 'js/web/progressbar.min.js');
-$modx->regClientScript($modx->getOption('bonus.assets_url') . 'js/web/init.js');
+$modx->regClientScript($modx->getOption('bonus.assets_url') . 'js/web/bonuspage.js');
 
 $userId = $modx->user->get('id');
 $pdoFetch = new pdoFetch($modx);

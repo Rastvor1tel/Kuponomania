@@ -11,8 +11,6 @@ $(function(){
     animateRate = current / to;
     animateRate = animateRate < 1 ? animateRate : 1;
 
-    console.log(animateRate);
-
     var lineBar = new ProgressBar.Line('#money-progress', {
         strokeWidth: 4,
         from: {
@@ -30,3 +28,19 @@ $(function(){
         duration: 1000
     });
 })
+
+$('#bonus-promocode').submit(function(e){
+    e.preventDefault();
+    var url = $(this).attr('action');
+    $.ajax({
+        method: 'POST',
+        url: url,
+        data: $(this).serialize(),
+        success: function(data){
+            var result = JSON.parse(data);
+            $('#user-bonus-balance').html(result.balance);
+            $('.client-promocode__form-response').addClass(result.status).html(result.message);
+            console.log(result);
+        }
+    });
+});

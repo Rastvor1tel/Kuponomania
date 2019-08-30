@@ -30,11 +30,6 @@ DialBonus.grid.DialBonus = function (config) {
             sortable: true,
             width: 100
         }, {
-            header: _('dialbonus.code_active_to'),
-            dataIndex: 'active_to',
-            sortable: true,
-            width: 100
-        }, {
             header: _('dialbonus.code_active'),
             dataIndex: 'active',
             sortable: true,
@@ -96,31 +91,32 @@ Ext.extend(DialBonus.grid.DialBonus, MODx.grid.Grid, {
             handler: this.removeCode
         }];
     },
-    addCode: function (btn, e) {
-        if (!this.updateBonusWindow) {
-            this.updateBonusWindow = MODx.load({
-                xtype: 'dialbonus-window-codes-add',
-                record: this.menu.record,
-                listeners: {
-                    'success': {fn: this.refresh, scope: this}
-                }
-            });
-        }
-        this.updateBonusWindow.setValues(this.menu.record);
-        this.updateBonusWindow.show(e.target);
+    addCode: function() {
+        var win = MODx.load({
+            xtype: 'dialbonus-window-codes',
+            listeners: {
+                success: {fn: function(r) {
+                        this.refresh();
+                    },scope: this},
+                scope: this
+            }
+        });
+        win.show();
     },
-    updateCode: function (btn, e) {
-        if (!this.updateBonusWindow) {
-            this.updateBonusWindow = MODx.load({
-                xtype: 'dialbonus-window-codes-update',
-                record: this.menu.record,
-                listeners: {
-                    'success': {fn: this.refresh, scope: this}
-                }
-            });
-        }
-        this.updateBonusWindow.setValues(this.menu.record);
-        this.updateBonusWindow.show(e.target);
+    updateCode: function() {
+        var record = this.menu.record;
+        var win = MODx.load({
+            xtype: 'dialbonus-window-codes',
+            listeners: {
+                success: {fn: function(r) {
+                        this.refresh();
+                    },scope: this},
+                scope: this
+            },
+            isUpdate: true
+        });
+        win.setValues(record);
+        win.show();
     },
     removeCode: function () {
         MODx.msg.confirm({
@@ -139,118 +135,61 @@ Ext.extend(DialBonus.grid.DialBonus, MODx.grid.Grid, {
 });
 Ext.reg('dialbonus-grid-codes', DialBonus.grid.DialBonus);
 
-DialBonus.window.AddCode = function (config) {
+DialBonus.window.Code = function (config) {
     config = config || {};
-    if (!config.id) {
-        config.id = 'dialbonus-window-codes-add';
-    }
+    config.id = config.id || Ext.id();
     Ext.applyIf(config, {
-        id: 'dialbonus-window-codes-add',
-        title: _('dialbonus.code_add'),
+        title: (config.isUpdate) ?
+            _('dialbonus.code_update') :
+            _('dialbonus.code_add'),
         url: DialBonus.config.connectorUrl,
         baseParams: {
-            action: 'mgr/codes/create'
+            action: (config.isUpdate) ?
+                'mgr/codes/update' :
+                'mgr/codes/create'
         },
-        fields: [{
-            xtype: 'hidden',
-            name: 'id'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.code_name'),
-            name: 'name',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.code_value'),
-            name: 'value',
-            anchor: '100%'
-        }, {
-            xtype: 'checkbox',
-            fieldLabel: _('dialbonus.code_multiple'),
-            name: 'multiple',
-            anchor: '100%'
-        }, {
-            xtype: 'xdatetime',
-            fieldLabel: _('dialbonus.code_active_to'),
-            name: 'active_to',
-            anchor: '100%'
-        }, {
-            xtype: 'checkbox',
-            fieldLabel: _('dialbonus.code_active'),
-            name: 'active',
-            anchor: '100%'
+        fields: this.getFields(config),
+        keys: [{
+            key: Ext.EventObject.ENTER, shift: true, fn: function () {
+                this.submit()
+            }, scope: this
         }]
     });
-    DialBonus.window.AddCode.superclass.constructor.call(this, config);
+    DialBonus.window.Code.superclass.constructor.call(this, config);
 };
-Ext.extend(DialBonus.window.AddCode, MODx.Window, {
-    getKeys: function () {
-        return [{
-            key: Ext.EventObject.ENTER,
-            shift: true,
-            fn: function () {
-                this.submit()
-            },
-            scope: this
-        }];
+Ext.extend(DialBonus.window.Code, MODx.Window, {
+    getFields: function (config) {
+        return [
+            {
+                xtype: 'hidden',
+                name: 'id',
+                id: config.id + '-id'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('dialbonus.code_name'),
+                name: 'name',
+                id: config.id + '-name',
+                anchor: '100%'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('dialbonus.code_value'),
+                name: 'value',
+                id: config.id + '-value',
+                anchor: '100%'
+            }, {
+                xtype: 'checkbox',
+                fieldLabel: _('dialbonus.code_multiple'),
+                name: 'multiple',
+                id: config.id + '-multiple',
+                anchor: '100%'
+            }, {
+                xtype: 'checkbox',
+                fieldLabel: _('dialbonus.code_active'),
+                name: 'active',
+                id: config.id + '-active',
+                anchor: '100%'
+            }
+        ];
     }
 });
-Ext.reg('dialbonus-window-codes-add', DialBonus.window.AddCode);
-
-DialBonus.window.UpdateCode = function (config) {
-    config = config || {};
-    if (!config.id) {
-        config.id = 'dialbonus-window-codes-update';
-    }
-    Ext.applyIf(config, {
-        id: 'dialbonus-window-codes-update',
-        title: _('dialbonus.code_update'),
-        url: DialBonus.config.connectorUrl,
-        baseParams: {
-            action: 'mgr/codes/update'
-        },
-        fields: [{
-            xtype: 'hidden',
-            name: 'id'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.code_name'),
-            name: 'name',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.code_value'),
-            name: 'value',
-            anchor: '100%'
-        }, {
-            xtype: 'checkbox',
-            fieldLabel: _('dialbonus.code_multiple'),
-            name: 'multiple',
-            anchor: '100%'
-        }, {
-            xtype: 'xdatetime',
-            fieldLabel: _('dialbonus.code_active_to'),
-            name: 'active_to',
-            anchor: '100%'
-        }, {
-            xtype: 'checkbox',
-            fieldLabel: _('dialbonus.code_active'),
-            name: 'active',
-            anchor: '100%'
-        }]
-    });
-    DialBonus.window.UpdateCode.superclass.constructor.call(this, config);
-};
-Ext.extend(DialBonus.window.UpdateCode, MODx.Window, {
-    getKeys: function () {
-        return [{
-            key: Ext.EventObject.ENTER,
-            shift: true,
-            fn: function () {
-                this.submit()
-            },
-            scope: this
-        }];
-    }
-});
-Ext.reg('dialbonus-window-codes-update', DialBonus.window.UpdateCode);
+Ext.reg('dialbonus-window-codes', DialBonus.window.Code);

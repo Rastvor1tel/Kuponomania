@@ -13,7 +13,6 @@ $xpdo_meta_map['dialBonusCode']= array (
     'name' => '',
     'value' => 0.0,
     'multiple' => 0,
-    'active_to' => NULL,
     'active' => 0,
   ),
   'fieldMeta' => 
@@ -41,12 +40,6 @@ $xpdo_meta_map['dialBonusCode']= array (
       'phptype' => 'boolean',
       'null' => false,
       'default' => 0,
-    ),
-    'active_to' => 
-    array (
-      'dbtype' => 'datetime',
-      'phptype' => 'datetime',
-      'null' => true,
     ),
     'active' => 
     array (

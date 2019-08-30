@@ -1,0 +1,35 @@
+Changelog for msProfile.
+
+1.1.1-pl
+==============
+- Ability to call msProfile::createPayment() via ajax.
+
+1.1.0-pl
+==============
+- Updated to work with miniShop2.4.
+- Requires at least miniShop2.4.0-beta2.
+
+1.0.4-pl
+==============
+- Improved load of pdoTools.
+
+1.0.3-pl
+==============
+- Ability to search customers by id in manager.
+
+1.0.2-pl1
+==============
+- Added dependence from miniShop2 to the installer.
+
+1.0.1-pl
+==============
+- Added checking miniShop2 upon initialization.
+
+1.0.0-pl
+==============
+- Fixed plugins events.
+- Fixed work with inactive methods.
+
+1.0.0-beta
+==============
+- Initial release.

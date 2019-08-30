@@ -42,13 +42,32 @@ class DialBonus {
         $query = $this->modx->newQuery('dialBonusBalance');
         $query->command('update');
         $query->set([
-            $field => $value
+            $field => (string)$value
         ]);
         $query->where([
             'user_id' => $userId
         ]);
         $query->prepare();
         $query->stmt->execute();
+    }
+
+    public function addBonusUser($userId) {
+        $query = $this->modx->newQuery('dialBonusBalance');
+        $query->select(['dialBonusBalance.*']);
+        $query->where([
+            'dialBonusBalance.user_id' => $userId
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        if(!$result) {
+            $query = $this->modx->newObject('dialBonusBalance', [
+                'user_id' => $userId,
+                'value' => 0,
+                'bonus_group' => 1
+            ]);
+            $query->save();
+        }
     }
 
     private function addBonusOperation($userId, $bonusValue, $type) {
@@ -182,6 +201,33 @@ class DialBonus {
         return $result;
     }
 
+    public function getBonusCode($name) {
+        $query = $this->modx->newQuery('dialBonusCode');
+        $query->select([
+            'dialBonusCode.*',
+        ]);
+        $query->where([
+            'dialBonusCode.name' => $name
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+        $result = $query->stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+        return $result;
+    }
+
+    public function updateBonusCode($name, $field, $value) {
+        $query = $this->modx->newQuery('dialBonusCode');
+        $query->command('update');
+        $query->set([
+            'dialBonusCode.'.$field => $value
+        ]);
+        $query->where([
+            'name' => $name
+        ]);
+        $query->prepare();
+        $query->stmt->execute();
+    }
+
     private function setBonusLvlUp($userId) {
         $bonusGroups = $this->getBonusGroupList();
         $sum = $this->getUserOrdersSum($userId);
@@ -194,16 +240,27 @@ class DialBonus {
         return;
     }
 
-    public function setBonusBalance($orderId, $userId) {
+    public function setBonusBalanceAfterOrder($orderId, $userId) {
         $arOrder = $this->getOrderAdditionalProps($orderId);
         $this->setBonusLvlUp($userId);
         $bonusModifier = $this->getUserBonusModifier($userId);
         $bonusFromOrder = $arOrder['cart_cost'] * $bonusModifier;
-        $balanceData = $this->getUserBalanceData($userId);
-        $newBalance = $balanceData['value'] + $bonusFromOrder;
-        $this->setUserBonusBalanceField($userId, 'value', $newBalance);
-        $this->addBonusOperation($userId, $bonusFromOrder, 'write-on');
-        return;
+        $this->increaseBonusBalance($bonusFromOrder, $userId);
+    }
+
+    public function addBonusCode2User($userId, $codeId) {
+        $arUser = $this->getUserBalanceData($userId);
+        $codeString = $arUser['bonus_code'] ? $arUser['bonus_code'].','.$codeId : $codeId;
+        $this->setUserBonusBalanceField($userId, 'bonus_code', $codeString);
+    }
+
+    public function increaseBonusBalance($bonusValue, $userId) {
+        if ($bonusValue > 0) {
+            $balanceData = $this->getUserBalanceData($userId);
+            $newBalance = $balanceData['value'] + $bonusValue;
+            $this->setUserBonusBalanceField($userId, 'value', $newBalance);
+            $this->addBonusOperation($userId, $bonusValue, 'write-on');
+        }
     }
 
     public function decreaseBonusBalance($orderId, $userId) {
@@ -211,11 +268,12 @@ class DialBonus {
         $orderProps = json_decode($arOrder['properties'], true);
         if ($orderProps['extfld_bonuspayed'] = 'Y') {
             $balanceData = $this->getUserBalanceData($userId);
-            $newBalance = $balanceData['value'] - $orderProps['extfld_bonusvalue'];
-            $newBalance = $newBalance >= 0 ? $newBalance : 0;
-            $this->setUserBonusBalanceField($userId, 'value', $newBalance);
-            $this->addBonusOperation($userId, $orderProps['extfld_bonusvalue'], 'write-off');
+            if ($orderProps['extfld_bonusvalue'] > 0) {
+                $newBalance = $balanceData['value'] - $orderProps['extfld_bonusvalue'];
+                $newBalance = $newBalance >= 0 ? $newBalance : 0;
+                $this->setUserBonusBalanceField($userId, 'value', $newBalance);
+                $this->addBonusOperation($userId, $orderProps['extfld_bonusvalue'], 'write-off');
+            }
         }
-        return;
     }
 }

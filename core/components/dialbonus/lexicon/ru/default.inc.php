@@ -37,5 +37,4 @@ $_lang['dialbonus.code_add'] = 'Добавить код';
 $_lang['dialbonus.code_name'] = 'Бонусный код';
 $_lang['dialbonus.code_value'] = 'Количество бонусов';
 $_lang['dialbonus.code_multiple'] = 'Многоразовый';
-$_lang['dialbonus.code_active_to'] = 'Действителен до';
 $_lang['dialbonus.code_active'] = 'Активен';

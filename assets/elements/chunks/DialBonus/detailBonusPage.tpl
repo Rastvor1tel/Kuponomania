@@ -24,3 +24,10 @@
     </div>
     <a href="{36 | url}" class="about-status">Подробнее о статусах</a>
 </div>
+<div class="client-promocode">
+    <form id="bonus-promocode" class="client-promocode__form" action="bonus-promocode" method="POST">
+        <label>Активировать промо-код: <span class="client-promocode__form-response"></span></label>
+        <input type="text" name="bonuscode" placeholder="Для зачисления бонусов введите подарочный промокод">
+        <input type="submit" value="Подтвердить">
+    </form>
+</div>

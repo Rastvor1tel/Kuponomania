@@ -13,6 +13,7 @@ $xpdo_meta_map['dialBonusBalance']= array (
     'user_id' => NULL,
     'value' => 0.0,
     'bonus_group' => 0,
+    'bonus_code' => '',
   ),
   'fieldMeta' => 
   array (
@@ -28,7 +29,7 @@ $xpdo_meta_map['dialBonusBalance']= array (
     array (
       'dbtype' => 'decimal',
       'precision' => '12,2',
-      'phptype' => 'float',
+      'phptype' => 'string',
       'null' => true,
       'default' => 0.0,
     ),
@@ -39,6 +40,14 @@ $xpdo_meta_map['dialBonusBalance']= array (
       'phptype' => 'integer',
       'null' => true,
       'default' => 0,
+    ),
+    'bonus_code' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10000',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
     ),
   ),
   'aggregates' => 

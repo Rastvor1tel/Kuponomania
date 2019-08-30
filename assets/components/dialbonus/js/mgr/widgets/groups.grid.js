@@ -91,31 +91,32 @@ Ext.extend(DialBonus.grid.DialBonus, MODx.grid.Grid, {
             handler: this.removeGroup
         }];
     },
-    addGroup: function (btn, e) {
-        if (!this.updateBonusWindow) {
-            this.updateBonusWindow = MODx.load({
-                xtype: 'dialbonus-window-groups-add',
-                record: this.menu.record,
-                listeners: {
-                    'success': {fn: this.refresh, scope: this}
-                }
-            });
-        }
-        this.updateBonusWindow.setValues(this.menu.record);
-        this.updateBonusWindow.show(e.target);
+    addGroup: function() {
+        var win = MODx.load({
+            xtype: 'dialbonus-window-groups',
+            listeners: {
+                success: {fn: function(r) {
+                        this.refresh();
+                    },scope: this},
+                scope: this
+            }
+        });
+        win.show();
     },
-    updateGroup: function (btn, e) {
-        if (!this.updateBonusWindow) {
-            this.updateBonusWindow = MODx.load({
-                xtype: 'dialbonus-window-groups-update',
-                record: this.menu.record,
-                listeners: {
-                    'success': {fn: this.refresh, scope: this}
-                }
-            });
-        }
-        this.updateBonusWindow.setValues(this.menu.record);
-        this.updateBonusWindow.show(e.target);
+    updateGroup: function() {
+        var record = this.menu.record;
+        var win = MODx.load({
+            xtype: 'dialbonus-window-groups',
+            listeners: {
+                success: {fn: function(r) {
+                        this.refresh();
+                    },scope: this},
+                scope: this
+            },
+            isUpdate: true
+        });
+        win.setValues(record);
+        win.show();
     },
     removeGroup: function () {
         MODx.msg.confirm({
@@ -134,78 +135,56 @@ Ext.extend(DialBonus.grid.DialBonus, MODx.grid.Grid, {
 });
 Ext.reg('dialbonus-grid-groups', DialBonus.grid.DialBonus);
 
-DialBonus.window.AddGroup = function (config) {
+DialBonus.window.Group = function (config) {
     config = config || {};
+    config.id = config.id || Ext.id();
     Ext.applyIf(config, {
-        title: _('dialbonus.group_add'),
+        title: (config.isUpdate) ?
+            _('dialbonus.group_update') :
+            _('dialbonus.group_add'),
         url: DialBonus.config.connectorUrl,
         baseParams: {
-            action: 'mgr/groups/create'
+            action: (config.isUpdate) ?
+                'mgr/groups/update' :
+                'mgr/groups/create'
         },
-        fields: [{
-            xtype: 'hidden',
-            name: 'id'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_name'),
-            name: 'name',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('order_sum'),
-            name: 'order_sum',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_bonus_from_order'),
-            name: 'bonus_from_order',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_bonus_on_order'),
-            name: 'bonus_on_order',
-            anchor: '100%'
+        fields: this.getFields(config),
+        keys: [{
+            key: Ext.EventObject.ENTER, shift: true, fn: function () {
+                this.submit()
+            }, scope: this
         }]
     });
-    DialBonus.window.AddGroup.superclass.constructor.call(this, config);
+    DialBonus.window.Group.superclass.constructor.call(this, config);
 };
-Ext.extend(DialBonus.window.AddGroup, MODx.Window);
-Ext.reg('dialbonus-window-groups-add', DialBonus.window.AddGroup);
-
-DialBonus.window.UpdateGroup = function (config) {
-    config = config || {};
-    Ext.applyIf(config, {
-        title: _('dialbonus.group_update'),
-        url: DialBonus.config.connectorUrl,
-        baseParams: {
-            action: 'mgr/groups/update'
-        },
-        fields: [{
-            xtype: 'hidden',
-            name: 'id'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_name'),
-            name: 'name',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('order_sum'),
-            name: 'order_sum',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_bonus_from_order'),
-            name: 'bonus_from_order',
-            anchor: '100%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('dialbonus.group_bonus_on_order'),
-            name: 'bonus_on_order',
-            anchor: '100%'
-        }]
-    });
-    DialBonus.window.UpdateGroup.superclass.constructor.call(this, config);
-};
-Ext.extend(DialBonus.window.UpdateGroup, MODx.Window);
-Ext.reg('dialbonus-window-groups-update', DialBonus.window.UpdateGroup);
+Ext.extend(DialBonus.window.Group, MODx.Window, {
+    getFields: function (config) {
+        return [
+            {
+                xtype: 'hidden',
+                name: 'id'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('dialbonus.group_name'),
+                name: 'name',
+                anchor: '100%'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('order_sum'),
+                name: 'order_sum',
+                anchor: '100%'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('dialbonus.group_bonus_from_order'),
+                name: 'bonus_from_order',
+                anchor: '100%'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: _('dialbonus.group_bonus_on_order'),
+                name: 'bonus_on_order',
+                anchor: '100%'
+            }
+        ];
+    }
+});
+Ext.reg('dialbonus-window-groups', DialBonus.window.Group);
