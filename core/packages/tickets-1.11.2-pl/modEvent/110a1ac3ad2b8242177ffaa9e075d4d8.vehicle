@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a6f4a33f43e4619ca599f7fd1866a355',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '110a1ac3ad2b8242177ffaa9e075d4d8',
+  'native_key' => 'OnBeforeTicketThreadRemove',
+  'object' => '{"name":"OnBeforeTicketThreadRemove","service":6,"groupname":"Tickets"}',
+);

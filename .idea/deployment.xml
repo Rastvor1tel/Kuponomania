@@ -9,7 +9,6 @@
           </mappings>
           <excludedPaths>
             <excludedPath path="/www/kuponomaniya.ru/core/cache" />
-            <excludedPath path="/www/kuponomaniya.ru/manager" />
           </excludedPaths>
         </serverdata>
       </paths>

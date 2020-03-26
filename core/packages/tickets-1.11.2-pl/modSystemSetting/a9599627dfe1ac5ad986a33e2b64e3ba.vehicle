@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4a5f14cd5f5f5bc9ab666b933ae7324b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a9599627dfe1ac5ad986a33e2b64e3ba',
+  'native_key' => 'tickets.mail_queue',
+  'object' => '{"key":"tickets.mail_queue","value":false,"xtype":"combo-boolean","namespace":"tickets","area":"tickets.mail","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '56f7e15b9caf3070207f8ddc99464cc4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'eae241334bc3f37bcb057592388d24fe',
+  'native_key' => 'tickets.frontend_js',
+  'object' => '{"key":"tickets.frontend_js","value":"[[+jsUrl]]web\\/default.js","xtype":"textfield","namespace":"tickets","area":"tickets.main","editedon":null}',
+);

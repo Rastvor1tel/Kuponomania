@@ -1,0 +1,53 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '05fdf7d94a7e27dfccdf3111f7e2e024' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"section_add_children","description":"section_add_children","value":1}',
+        'guid' => 'b7bed2d52aa9536195250ee0b106a356',
+        'native_key' => NULL,
+        'signature' => '1c98861199a4415be2b2e83beeb73f85',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'afef64f8a4fc0a5a0aea76e013d21f89',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => 'a8f3b246cc6485ba9bd9b7cc8cfccb01',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":3,"name":"TicketsSectionPolicyTemplate","description":"A policy for users to add Tickets to section.","lexicon":"tickets:permissions","permissions":{"section_add_children":[]}}',
+);

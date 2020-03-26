@@ -2,680 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7865b6c4-579c-4415-91ec-975cc3df15fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Kuponomania.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-avtoklass-prevyu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-kino-prevyu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-uzhin-prevyu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.06.2018-rollyi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/buyButton.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/detailGallery.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/expiredProductsTpl.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/msOption.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/selectButton.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/User/userCoupons.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/chunks/msProfile/tplChargeOrderSuccess.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/checkAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/countBuyedProducts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/productCoupons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/userCoupons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/userCouponsExpired.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/elements/snippets/userCouponsUsed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/manikyur-ombre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/14/54247434-2307710689271695-8673029888980884069-n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/14/big/54247434-2307710689271695-8673029888980884069-n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/14/medium/54247434-2307710689271695-8673029888980884069-n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/14/small/54247434-2307710689271695-8673029888980884069-n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/1-post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/big/1-post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/big/photo-2018-01-10-20-35-35-d-850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/medium/1-post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/medium/photo-2018-01-10-20-35-35-d-850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/photo-2018-01-10-20-35-35-d-850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/small/1-post.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/41/small/photo-2018-01-10-20-35-35-d-850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/42/big/i7enb93rbte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/42/i7enb93rbte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/42/medium/i7enb93rbte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/42/small/i7enb93rbte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/43/big/img-6746.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/43/img-6746.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/43/medium/img-6746.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/43/small/img-6746.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/44/bez-imeni-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/44/big/bez-imeni-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/44/medium/bez-imeni-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/44/small/bez-imeni-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/45/bez-imeni-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/45/big/bez-imeni-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/45/medium/bez-imeni-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/products/45/small/bez-imeni-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Client/ApiClientInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Client/BaseClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Client/CurlClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Client/YandexMoneyApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractObject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractPaymentRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractPaymentRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/AbstractRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/ApiConnectionException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/ApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/AuthorizeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/BadApiRequestException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/EmptyPropertyValueException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/ForbiddenException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/InternalServerError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/InvalidPropertyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/InvalidPropertyValueException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/InvalidPropertyValueTypeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/InvalidRequestException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/JsonException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/NotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/ResponseProcessingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/TooManyRequestsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/Exceptions/UnauthorizedException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/HttpVerb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/LoggerWrapper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/ResponseObject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Common/legacy_json_serializable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/Config/ConfigurationLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/Config/ConfigurationLoaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/Random.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/RawHeadersParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/StringObject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/TypeCast.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Helpers/UUID.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Airline.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/AirlineInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/AmountInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/AuthorizationDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/AuthorizationDetailsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/CancellationDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/CancellationDetailsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/CancellationDetailsPartyCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/CancellationDetailsReasonCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/AbstractConfirmation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationCodeVerification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationDeepLink.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationEmbedded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationExternal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Confirmation/ConfirmationRedirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/AbstractConfirmationAttributes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesCodeVerification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesDeepLink.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesEmbedded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesExternal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationAttributes/ConfirmationAttributesRedirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ConfirmationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/CurrencyCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Leg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/LegInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Metadata.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/MonetaryAmount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Notification/AbstractNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Notification/NotificationCanceled.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Notification/NotificationRefundSucceeded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Notification/NotificationSucceeded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Notification/NotificationWaitingForCapture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/NotificationEventType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/NotificationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Passenger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PassengerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/AbstractPaymentData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/B2b/Sberbank/VatData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/B2b/Sberbank/VatDataInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/B2b/Sberbank/VatDataRate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/B2b/Sberbank/VatDataType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataAlfabank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataApplePay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataB2bSberbank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataBankCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataBankCardCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataCash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataGooglePay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataInstallments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataMobileBalance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataQiwi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataSberbank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataTinkoffBank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataWebmoney.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentData/PaymentDataYandexWallet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/AbstractPaymentMethod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/B2b/Sberbank/PayerBankDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/B2b/Sberbank/PayerBankDetailsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodAlfaBank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodApplePay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodB2bSberbank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodBankCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodCardType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodCash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodGooglePay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodInstallments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodMobileBalance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodPsb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodQiwi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodSberbank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodTinkoffBank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodWebmoney.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethod/PaymentMethodYandexWallet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentMethodType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/PaymentStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Receipt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Receipt/PaymentMode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Receipt/PaymentSubject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Receipt/ReceiptItemAmount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptCustomer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptCustomerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptItemInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptRegistrationStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/ReceiptType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Recipient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/RecipientInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Refund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/RefundInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/RefundStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Model/Webhook/Webhook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/PaymentOptionsResponseItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/AbstractPaymentResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/CreatePaymentRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/CreatePaymentRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/CreatePaymentRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/CreatePaymentRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/CreatePaymentResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CancelResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CreateCaptureRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CreateCaptureRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CreateCaptureRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CreateCaptureRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/Payment/CreateCaptureResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentsRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentsRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentsRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Payments/PaymentsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/AbstractReceiptResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/PaymentReceiptResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/ReceiptResponseInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/ReceiptResponseItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/ReceiptResponseItemInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/ReceiptsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Receipts/RefundReceiptResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/AbstractRefundResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/CreateRefundRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/CreateRefundRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/CreateRefundRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/CreateRefundRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/CreateRefundResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundsRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundsRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundsRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Refunds/RefundsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/Request/Webhook/WebhookListResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout(old)/configuration.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/UserAgent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/ExtensionNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Confirmation/ConfirmationQr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationAttributes/ConfirmationAttributesQr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Notification/NotificationFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/PaymentDataWechat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodWechat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt/SettlementType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Settlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/SettlementInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/CreatePostReceiptRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/CreatePostReceiptRequestBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/CreatePostReceiptRequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/CreatePostReceiptRequestSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/ReceiptResponseFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectors/config.core.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectors/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectors/lang.js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectors/modx.config.js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectors/system/phpthumb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/packages/dialbonus-1.0-rc1/modCategory/acfbc1b55f6342e2928fca5618c54bb9.vehicle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/packages/dialbonus-1.0-rc1/modMenu/fc98f0fed4b095273a7d560007225af8.vehicle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/packages/dialbonus-1.0-rc1/modNamespace/d6ccbda8bbae61004e128dcd361142b9.vehicle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img-6746.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manikyur-ombre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpinfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/images/grass-texture1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/clientconfig.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/clientconfig.class.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/sections/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/sections/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/widgets/combos.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/widgets/combos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/widgets/window.settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/clientconfig/js/mgr/widgets/window.settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/dialbonus/css/web/order.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/dialbonus/css/web/order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/formit/cronjob/cron.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/formit/cronjob/cron.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/formit/js/mgr/widgets/forms.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/formit/js/mgr/widgets/forms.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/connector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/bootstrap.buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/bootstrap.buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/old.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/css/mgr/old.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/css/web/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/css/web/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/css/web/lib/fotorama.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/css/web/lib/fotorama.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/category.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/category.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/option.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/option.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/option.windows.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/option.windows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/product.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/category/product.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/minishop2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/minishop2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/default.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/default.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/default.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/default.window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/ext.ddview.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/ext.ddview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/ms2.combo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/ms2.combo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/moxie.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/moxie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/moxie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/moxie.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/plupload/plupload.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/strftime-min-1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/misc/strftime-min-1.3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.logs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.logs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.products.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.grid.products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.window.product.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/orders/orders.window.product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.view.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/gallery/gallery.window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/links.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/links.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/links.window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/links.window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/product.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/product/product.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/members.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/delivery/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/link/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/link/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/link/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/link/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/types/combobox.grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/types/combobox.grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/option/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/members.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/payment/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/status/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/status/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/status/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/status/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/vendor/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/vendor/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/vendor/window.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/mgr/settings/vendor/window.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/web/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/web/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/fotorama.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/fotorama.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.form.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.form.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/js/web/lib/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/payment/paypal.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/payment/paypal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/minishop2/payment/yandex.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/minishop2/payment/yandex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/js/mgr/section/section.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/js/mgr/section/section.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/ticket.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/ticket.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/js/mgr/ticket/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/tickets/js/web/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/tickets/js/web/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/AjaxForm/form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/AjaxForm/form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/Login/headerLk.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/Login/headerLk.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/Login/profile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/Login/profile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/Login/updateProfile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/Login/updateProfile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/order.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/order.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/productDetail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/productDetail.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/productsTpl.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/MiniShop/productsTpl.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/User/userProfile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/User/userProfile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/expiredCoupons.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/expiredCoupons.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/meta.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/meta.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/chunks/msProfile/tplChargePayment.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/chunks/msProfile/tplChargePayment.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/snippets/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/snippets/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/templates/cabinet.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/templates/cabinet.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/elements/templates/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elements/templates/index.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/ApiClientInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/ApiClientInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/BaseClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/BaseClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/CurlClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Client/CurlClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/AbstractPaymentRequestBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/AbstractPaymentRequestBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/BadApiRequestException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/BadApiRequestException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/ForbiddenException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/ForbiddenException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/InternalServerError.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/InternalServerError.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/NotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/NotFoundException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/ResponseProcessingException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/ResponseProcessingException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/TooManyRequestsException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/TooManyRequestsException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/UnauthorizedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Common/Exceptions/UnauthorizedException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Helpers/TypeCast.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Helpers/TypeCast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/AmountInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/AmountInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Confirmation/ConfirmationFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Confirmation/ConfirmationFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationAttributes/AbstractConfirmationAttributes.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationAttributes/AbstractConfirmationAttributes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationAttributes/ConfirmationAttributesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationAttributes/ConfirmationAttributesFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ConfirmationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/MonetaryAmount.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/MonetaryAmount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatData.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatDataRate.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatDataRate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatDataType.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/B2b/Sberbank/VatDataType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/PaymentDataFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentData/PaymentDataFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/AbstractPaymentMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/AbstractPaymentMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodBankCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodBankCard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodCardType.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodCardType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethod/PaymentMethodFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethodType.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/PaymentMethodType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt/PaymentSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt/PaymentSubject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt/ReceiptItemAmount.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/Receipt/ReceiptItemAmount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptCustomer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Model/ReceiptItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/AbstractPaymentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/AbstractPaymentResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/CreatePaymentRequestBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/CreatePaymentRequestBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/CreatePaymentRequestSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Payments/CreatePaymentRequestSerializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/AbstractReceiptResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/AbstractReceiptResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/PaymentReceiptResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/PaymentReceiptResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/ReceiptResponseInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/ReceiptResponseInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/ReceiptsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/ReceiptsResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/RefundReceiptResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Receipts/RefundReceiptResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Refunds/CreateRefundRequestSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lib/YandexCheckout/Request/Refunds/CreateRefundRequestSerializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.core.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/docs/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/docs/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/elements/plugins/clientconfig.plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/elements/plugins/clientconfig.plugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/lexicon/de/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/lexicon/de/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/lexicon/en/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/lexicon/en/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/model/clientconfig/cgsetting.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/model/clientconfig/cgsetting.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/clientconfig/model/clientconfig/clientconfig.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/clientconfig/model/clientconfig/clientconfig.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/dialbonus/model/dialbonus/dialbonus.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/dialbonus/model/dialbonus/dialbonus.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/docs/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/docs/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/lexicon/ru/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/lexicon/ru/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/lexicon/ru/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/lexicon/ru/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/lexicon/ru/recaptcha.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/lexicon/ru/recaptcha.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/src/FormIt/Hook.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/src/FormIt/Hook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/formit/src/FormIt/Hook/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/formit/src/FormIt/Hook/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/category/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/category/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/category/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/category/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/manager.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/manager.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/mgr/orders.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/mgr/orders.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/mgr/settings.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/mgr/settings.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/product/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/product/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/product/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/product/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/resource_create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/resource_create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/controllers/resource_update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/controllers/resource_update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/config.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/ms2gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/ms2gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/ms2products.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/ms2products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/processors/gallery/upload.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/processors/gallery/upload.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/convert/ms1/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/custom/payment/lib/paypal/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/custom/payment/lib/paypal/cacert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/custom/payment/paypal.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/custom/payment/paypal.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/custom/payment/yandex.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/custom/payment/yandex.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/docs/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/docs/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/docs/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/docs/license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/docs/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/docs/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_cart.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_cart.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_cancelled_user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_cancelled_user.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_new_manager.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_new_manager.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_new_user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_new_user.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_paid_manager.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_paid_manager.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_paid_user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_paid_user.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_sent_user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_email_sent_user.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_gallery.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_gallery.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_get_order.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_get_order.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_minicart.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_minicart.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_options.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_options.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_order.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_order.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_product_content.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_product_content.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_product_options.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_product_options.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_products_row.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/chunks/chunk.ms_products_row.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/plugins/plugin.minishop2.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/plugins/plugin.minishop2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_get_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_get_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_minicart.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_minicart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_product_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_product_options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/elements/snippets/snippet.ms_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/import/csv.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/import/csv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/permissions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/permissions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/de/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/en/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/fr/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/gr/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/gr/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/gr/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/gr/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/permissions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/permissions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/lt/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/permissions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/permissions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/nl/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/permissions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/permissions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ro/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/ru/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/cart.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/cart.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/manager.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/manager.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/product.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/product.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/lexicon/uk/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/minishop2.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/minishop2.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscarthandler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscarthandler.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategory.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategory.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategorymember.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategorymember.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategoryoption.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscategoryoption.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscustomerprofile.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mscustomerprofile.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdelivery.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdelivery.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdeliveryhandler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdeliveryhandler.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdeliverymember.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msdeliverymember.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mslink.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mslink.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msoption.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msoption.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorder.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorder.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderaddress.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderaddress.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderhandler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderhandler.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderlog.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderlog.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderproduct.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderproduct.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderstatus.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msorderstatus.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mspayment.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mspayment.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mspaymenthandler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/mspaymenthandler.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproduct.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproduct.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductdata.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductdata.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductfile.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductfile.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductlink.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductlink.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductoption.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msproductoption.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msvendor.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/minishop2/msvendor.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/model/schema/minishop2.mysql.schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/model/schema/minishop2.mysql.schema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/activate.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/activate.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/add.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/add.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/deactivate.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/deactivate.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/delete.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/delete.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/duplicate.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/duplicate.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/require.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/require.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/unrequire.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/unrequire.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/updatefromgrid.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/category/option/updatefromgrid.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/generate.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/generate.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/upload.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/gallery/upload.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/product/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/orders/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/productlink/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/sort.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/sort.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/updatefromgrid.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/product/updatefromgrid.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/disable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/disable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/enable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/enable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/disable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/disable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/enable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/enable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/payments/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/sort.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/sort.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/delivery/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/getclass.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/getclass.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/link/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/assign.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/assign.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/duplicate.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/duplicate.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/getnodes.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/getnodes.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/gettypes.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/gettypes.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/checkbox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/checkbox.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-boolean.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-boolean.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-options.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combo-options.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combobox.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/combobox.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/datefield.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/datefield.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/numberfield.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/numberfield.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/textarea.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/textarea.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/textfield.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/types/textfield.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/option/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/disable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/disable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/enable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/enable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/deliveries/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/disable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/disable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/enable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/enable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/sort.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/sort.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/payment/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/disable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/disable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/enable.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/enable.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/sort.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/sort.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/status/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/create.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/create.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/get.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/get.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/multiple.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/multiple.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/remove.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/remove.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/settings/vendor/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/chunk/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/chunk/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/context/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/context/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/resource/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/element/resource/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/user/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/minishop2/processors/mgr/system/user/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/msdo/msdo.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/msdo/msdo.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdobought.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdobought.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdobought.map.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdobought.map.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdooffer.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdooffer.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdooffer.map.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/msdo/mysql/msdooffer.map.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/msdo/model/schema/msdo.mysql.schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/msdo/model/schema/msdo.mysql.schema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/controllers/ticket/update.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/controllers/ticket/update.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/docs/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/docs/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/elements/snippets/snippet.comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/elements/snippets/snippet.comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/lexicon/en/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/lexicon/en/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/lexicon/en/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/lexicon/en/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/properties.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/properties.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/setting.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/lexicon/ru/setting.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/schema/tickets.mysql.schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/schema/tickets.mysql.schema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/tickets/mysql/ticketauthor.map.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/tickets/mysql/ticketauthor.map.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/tickets/mysql/ticketthread.map.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/tickets/mysql/ticketthread.map.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/tickets/ticket.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/tickets/ticket.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/tickets/ticketauthor.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/tickets/ticketauthor.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/model/tickets/tickets.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/model/tickets/tickets.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/processors/mgr/ticket/publish.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/processors/mgr/ticket/publish.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/processors/web/file/upload.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/processors/web/file/upload.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/tickets/processors/web/section/getlist.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/tickets/processors/web/section/getlist.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/config/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/config/config.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/packages/tickets-1.10.1-pl/modCategory/5e01b8bc214e598c4d49895abcff6a0a/1/tickets/lexicon/ru/default.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/packages/tickets-1.10.1-pl/modCategory/5e01b8bc214e598c4d49895abcff6a0a/1/tickets/lexicon/ru/default.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config.core.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config.core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/controllers/default/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/controllers/default/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/template/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -775,18 +103,48 @@
       <workItem from="1580217360182" duration="6501000" />
       <workItem from="1581318455817" duration="13000" />
       <workItem from="1584948937824" duration="871000" />
-      <workItem from="1585205720142" duration="3710000" />
+      <workItem from="1585205720142" duration="4710000" />
     </task>
+    <task id="LOCAL-00001" summary="Правки">
+      <created>1585213677792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585213677792</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Правки">
+      <created>1585213766188</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585213766188</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Kuponomania" />
     </ignored-roots>
+    <MESSAGE value="Правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Deployment" timestamp="1585209989399">
@@ -801,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1004" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579269006345" />
-    <state x="475" y="36" key="CommitChangelistDialog2" timestamp="1585213726649">
+    <state x="475" y="36" key="CommitChangelistDialog2" timestamp="1585213765078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="475" y="36" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585213726649" />
+    <state x="475" y="36" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585213765078" />
     <state width="1293" height="278" key="GridCell.Tab.0.bottom" timestamp="1584949144328">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -833,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="309" y="62" width="1212" height="829" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585209979392" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1585213681781">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1585213769304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1585213681781" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1585213769304" />
     <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1581318464528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
