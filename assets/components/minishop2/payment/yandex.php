@@ -13,7 +13,7 @@ $miniShop2 = $modx->getService('miniShop2');
 $miniShop2->loadCustomClasses('payment');
 
 if (!class_exists('Yandex')) {
-    exit('Error: не удалось загрузить класс "Yandex".');
+	exit('Error: не удалось загрузить класс "Yandex".');
 }
 /** @var msOrder $order */
 $order = $modx->newObject('msOrder');
@@ -21,19 +21,24 @@ $order = $modx->newObject('msOrder');
 $handler = new Yandex($order);
 
 $paymentObject = $handler->requestCheck();
-$paymentStatus = $paymentObject->getStatus();
-$paymentMeta = $paymentObject->getMetadata();
+$arPayment = [
+	'ID'     => $paymentObject->getId(),
+	'AMOUNT' => $paymentObject->getAmount(),
+	'STATUS' => $paymentObject->getStatus(),
+	'META'   => $paymentObject->getMetadata()
+];
 
-$orderId = $paymentMeta['orderId'];
-$orderHash = $paymentMeta['orderHash'];
-
+$orderId = $arPayment['META']['orderId'];
+$orderHash = $arPayment['META']['orderHash'];
 
 if ($order = $modx->getObject('msOrder', (int)$orderId)) {
-    if (($paymentStatus == 'succeeded') && ($orderHash == $handler->getOrderHash($order))) {
-        if ($order = $modx->getObject('msOrder', array('id' => $orderId))) {
-            $handler->receive($order, $paymentStatus);
-        } else {
-            $modx->log(modX::LOG_LEVEL_ERROR, '[miniShop2] Не удалось подтвердить заказ с id ' . $orderId);
-        }
-    }
+	if (($arPayment['STATUS'] == 'succeeded') && ($orderHash == $handler->getOrderHash($order))) {
+		if ($order = $modx->getObject('msOrder', ['id' => $orderId])) {
+			$handler->changeStatus($order, $arPayment['STATUS']);
+			$items = $handler->getOrder($orderId);
+			$handler->createPayment($orderId, $arPayment['ID'], $arPayment['AMOUNT'], $items);
+		} else {
+			$modx->log(modX::LOG_LEVEL_ERROR, '[miniShop2] Не удалось подтвердить заказ с id ' . $orderId);
+		}
+	}
 }

@@ -4,6 +4,10 @@ $xpdo_meta_map['msdoOffer']= array (
   'version' => '1.1',
   'table' => 'msdo_offers',
   'extends' => 'xPDOSimpleObject',
+  'tableMeta' => 
+  array (
+    'engine' => 'MyISAM',
+  ),
   'fields' => 
   array (
     'product_id' => NULL,

@@ -37,16 +37,19 @@ ClientConfig.combo.FieldTypes = function(config) {
                 ['textfield', _('clientconfig.xtype.textfield')],
                 ['textarea', _('clientconfig.xtype.textarea')],
                 ['richtext', _('clientconfig.xtype.richtext')],
+                ['code', _('clientconfig.xtype.code')],
                 ['modx-panel-tv-image', _('clientconfig.xtype.image')],
                 ['modx-panel-tv-file', _('clientconfig.xtype.file')],
                 ['numberfield', _('clientconfig.xtype.numberfield')],
                 ['colorpickerfield', _('clientconfig.xtype.colorpalette')],
+                ['email', _('clientconfig.xtype.email')],
                 ['xcheckbox', _('clientconfig.xtype.xcheckbox')],
                 ['datefield', _('clientconfig.xtype.datefield')],
                 ['timefield', _('clientconfig.xtype.timefield')],
                 ['password', _('clientconfig.xtype.password')],
                 ['modx-combo', _('clientconfig.xtype.combobox')],
-                ['googlefontlist', _('clientconfig.xtype.googlefonts')]
+                ['googlefontlist', _('clientconfig.xtype.googlefonts')],
+                ['clientconfig-line', _('clientconfig.xtype.line')]
             ]
         }),
         hiddenName: config.name || 'xtype',
@@ -104,3 +107,9 @@ ClientConfig.combo.ContextList = function(config) {
 };
 Ext.extend(ClientConfig.combo.ContextList, MODx.combo.ComboBox);
 Ext.reg('clientconfig-combo-contexts',ClientConfig.combo.ContextList);
+
+
+ClientConfig.ux.Line = Ext.extend(Ext.Component, {
+    autoEl: 'hr'
+});
+Ext.reg('clientconfig-line', ClientConfig.ux.Line);

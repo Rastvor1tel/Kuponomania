@@ -93,7 +93,7 @@
     <object class="TicketThread" table="tickets_threads" extends="xPDOSimpleObject">
         <field key="resource" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false"
                default="0"/>
-        <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+        <field key="name" dbtype="varchar" precision="191" phptype="string" null="false" default=""/>
 
         <field key="subscribers" dbtype="text" phptype="json" null="false" default=""/>
 
@@ -306,6 +306,7 @@
                default="0"/>
         <field key="votes_comments_down" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="true"
                default="0"/>
+        <field key="properties" dbtype="text" phptype="json" null="true"/>
 
         <index alias="PRIMARY" name="PRIMARY" primary="true" unique="true" type="BTREE">
             <column key="id" length="" collation="A" null="false"/>

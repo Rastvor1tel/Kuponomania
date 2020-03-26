@@ -12,7 +12,6 @@
             <div class="content">
                 <div class="p-deal_containers">
                     {block 'content'}
-
                     {/block}
                 </div>
             </div>

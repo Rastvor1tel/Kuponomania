@@ -51,7 +51,7 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6" id="deliveries">
+        <div class="col-12 col-md-6" id="deliveries" style="width:1px;height:1px;overflow:hidden;padding:0;">
             <h4>{'ms2_frontend_deliveries' | lexicon}:</h4>
             <div class="form-group row">
                 <div class="col-12">
@@ -81,10 +81,10 @@
             <div class="bonus-block bonus-ajax-content">
                 <h4>Использование бонусов:</h4>
                 <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span> бонусов.</p>
-                <p>Вы можете оплатитьбонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
+                <p>Вы можете оплатить бонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
                 <div class="bonus-block__form">
                     <div class="bonus-block__input">
-                        <label for="bonuspayed"><span class="btn btn-success btn-lg">Оплатить используя бонусы</span></label>
+                        <label for="bonuspayed"><span class="btn btn-success btn-lg">Оплатить бонусами</span></label>
                         <input type="checkbox" class="hidden" id="bonuspayed" value="Y" name="extfld_bonuspayed">
                     </div>
                     <div class="bonus-block__input bonus-value">

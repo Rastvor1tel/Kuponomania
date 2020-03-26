@@ -33,16 +33,20 @@
                     <div class="sidebar-body-title">
                         <a href="{35 | url}" class="sidebar-body-title-link">Бонусная программа</a>
                     </div>
-                    <div class="sidebar-body-title">
+                    {*<div class="sidebar-body-title">
                         <a href="#" class="sidebar-body-title-link">Партнерская программа</a>
-                    </div>
+                    </div>*}
                 </div>
             </div>
         </div>
         <div class="kabinet-column-right">
+            {if $_modx->resource.id != 38 AND  $_modx->resource.id!=39 AND $_modx->resource.id!=40}
             <div class="right-content">
-                {$_modx->resource.content}
-            </div>
+            {/if}
+            {$_modx->resource.content}
+            {if $_modx->resource.id != 38 AND $_modx->resource.id!=39 AND  $_modx->resource.id!=40}
+             </div>
+            {/if}
         </div>
     </div>
 {/block}

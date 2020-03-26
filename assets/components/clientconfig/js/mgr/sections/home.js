@@ -35,6 +35,7 @@ ClientConfig.page.Home = function(config) {
                     },
                     items: this.getTabs(),
                     stateful: true,
+                    id: 'clientconfig-page-home-tabs',
                     stateId: 'clientconfig-page-home',
                     stateEvents: ['tabchange'],
                     getState: function () {
@@ -74,6 +75,16 @@ Ext.extend(ClientConfig.page.Home,MODx.Component,{
                 contextSelector.setValue(ClientConfig.initialContext.key);
                 contextSelector.fireEvent('select', contextSelector);
             }
+
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 0) {
+                var id = 'clientconfig-home-tab-' + hash,
+                    tabPanel = Ext.getCmp('clientconfig-page-home-tabs');
+                if (tabPanel && tabPanel.items.keys.indexOf(id) !== -1) {
+                    tabPanel.setActiveTab(id);
+                }
+            }
+
         }, 150)
     },
     getTabs: function() {
@@ -94,11 +105,19 @@ Ext.extend(ClientConfig.page.Home,MODx.Component,{
                     id: 'clientconfig-' + value.key.replace('.','-')
                 };
 
-                if (['textarea'].indexOf(field.xtype) !== -1) {
-                    field.anchor = '100%';
+                if (['textarea', 'code'].indexOf(field.xtype) !== -1) {
+                    field.anchor = '90%';
+                    field.grow = true;
+                    field.growMin = 150;
+                    field.growMax = 800;
+                }
+                if (field.xtype === 'code') {
+                    field.height = 150;
+                    field.xtype = Ext.ComponentMgr.isRegistered('modx-texteditor') ? 'modx-texteditor' : 'textarea';
                 }
 
                 if (field.xtype == 'richtext') {
+                    field.anchor = '90%';
                     field.xtype = 'textarea';
                     rtes.push(field.id);
                 }
@@ -132,6 +151,10 @@ Ext.extend(ClientConfig.page.Home,MODx.Component,{
                     field.xtype = 'textfield';
                     field.inputType = 'password';
                 }
+                if (field.xtype === 'email') {
+                    field.xtype = 'textfield';
+                    field.vtype = 'email';
+                }
 
                 if (field.xtype == 'modx-combo') {
                     var options = value.options.split('||');
@@ -159,6 +182,12 @@ Ext.extend(ClientConfig.page.Home,MODx.Component,{
                     field.mode = 'local';
                 }
 
+                // Remove all extra definitions for the line divider
+                if (field.xtype === 'clientconfig-line') {
+                    field = {
+                        xtype: 'clientconfig-line'
+                    }
+                }
 
                 fields.push(field);
 
@@ -175,7 +204,7 @@ Ext.extend(ClientConfig.page.Home,MODx.Component,{
             /* Only create the tab if there are fields in it. */
             if (fields.length >= 1) {
                 var tab = {
-                    id: 'clientconfig-home-tab-'+tabData.id,
+                    id: 'clientconfig-home-tab-' + tabData.id,
                     title: tabData.label,
                     items: [],
                     cls: 'tvs-wrapper'

@@ -475,7 +475,9 @@ FormIt.window.ExportForms = function(config) {
             description : MODx.expandHelp ? '' : _('formit.label_export_form_desc'),
             name        : 'form',
             anchor      : '100%',
-            allowBlank  : false
+            width       : '100%', 
+            emptyText   : _('formit.filter_form'),
+            allowBlank  : true
         }, {
             xtype       : MODx.expandHelp ? 'label' : 'hidden',
             html        : _('formit.label_export_form_desc'),
@@ -531,14 +533,16 @@ FormIt.combo.Forms = function(config) {
     config = config || {};
 
     Ext.applyIf(config, {
-        url         : FormIt.config.connector_url,
-        baseParams  : {
-            action      : 'mgr/forms/getforms'
+        url             : FormIt.config.connector_url,
+        baseParams      : {
+            action : 'mgr/forms/getforms'
         },
-        fields      : ['form'],
-        hiddenName  : 'form',
-        valueField  : 'form',
-        displayField : 'form'
+        fields          : ['form'],
+        hiddenName      : 'form',
+        valueField      : 'form',
+        displayField    : 'form',
+        paging          : true,
+        pageSize        : MODx.config.default_per_page > 30 ? MODx.config.default_per_page : 30
     });
 
     FormIt.combo.Forms.superclass.constructor.call(this, config);

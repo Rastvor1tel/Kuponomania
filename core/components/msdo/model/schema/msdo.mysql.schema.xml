@@ -14,6 +14,7 @@
 		<field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" />
 		<field key="value" dbtype="varchar" precision="255" phptype="string" null="true" />
 		<field key="boughtdon" dbtype="datetime" phptype="datetime" null="true" />
+		<field key="used" dbtype="int" phptype="10" null="true" />
 	</object>
 
 </model>

@@ -1,0 +1,26 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'dialbonus',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '78354fe398f0222844b756ed8a418068',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'acfbc1b55f6342e2928fca5618c54bb9',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"DialBonus","rank":0}',
+);

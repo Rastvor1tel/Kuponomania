@@ -27,7 +27,7 @@
                     <div class="form-group policy">
                         <label for="policy">
                             <input type="checkbox" name="policy" id="policy" class="form-control" value="" required="">
-                            <span>Я согласен с <a href="informacia/polzovatelskoe-soglasenie" target="_blank">правилами</a></span>
+                            <span>Я согласен с <a href="/informacziya/polzovatelskoe-soglashenie/" target="_blank">правилами</a></span>
                             <span class="error_policy"></span>
                         </label>
                     </div>

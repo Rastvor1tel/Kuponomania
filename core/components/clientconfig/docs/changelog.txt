@@ -1,3 +1,24 @@
+ClientConfig 2.3.0-pl
+---------------------
+Released on 2019-10-24
+
+- Add icon to the menu item (when moved to the top navigation) [#175]
+- Make placeholders available for inherited fenom templates [#173, #174]
+- Make textarea fields bigger and automatically growing with the content [#172]
+- Allow a hash in the url containing the ID of a group to automatically open to that tab [#169]
+- Add a line/divider field type to create simple sections [#149]
+- Add a code field type (requires Ace editor) for things like custom CSS or other markup [#144]
+- Add an email field type which validates the value to be an email address [#65]
+- Include OnHandleRequest plugin event (alongside OnMODXInit), to make ClientConfig play nicer with various context routing and other solutions that don't use OnMODXInit [#140]
+- Add separate "Save" and "Save and close" buttons to the setting window [#135]
+
+ClientConfig 2.2.0-pl
+---------------------
+Released on 2019-08-19
+
+- Fix media source path being included for empty values [#152]
+- When context values are empty, it will now fall back to the global value
+
 ClientConfig 2.1.0-pl
 ---------------------
 Released on 2018-12-05

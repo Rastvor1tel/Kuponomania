@@ -3,7 +3,8 @@ if (!class_exists('msPaymentInterface')) {
     require_once dirname(dirname(dirname(__FILE__))) . '/model/minishop2/mspaymenthandler.class.php';
 }
 
-class PayPal extends msPaymentHandler implements msPaymentInterface {
+class PayPal extends msPaymentHandler implements msPaymentInterface
+{
 
     /**
      * PayPal constructor.
@@ -11,7 +12,8 @@ class PayPal extends msPaymentHandler implements msPaymentInterface {
      * @param xPDOObject $object
      * @param array $config
      */
-    function __construct(xPDOObject $object, $config = array()) {
+    function __construct(xPDOObject $object, $config = array())
+    {
         parent::__construct($object, $config);
 
         $siteUrl = $this->modx->getOption('site_url');
@@ -38,7 +40,8 @@ class PayPal extends msPaymentHandler implements msPaymentInterface {
      *
      * @return array|string
      */
-    public function send(msOrder $order) {
+    public function send(msOrder $order)
+    {
         if ($order->get('status') > 1) {
             return $this->error('ms2_err_status_wrong');
         }
@@ -91,7 +94,8 @@ class PayPal extends msPaymentHandler implements msPaymentInterface {
      *
      * @return bool
      */
-    public function receive(msOrder $order, $params = array()) {
+    public function receive(msOrder $order, $params = array())
+    {
         if (!empty($params['PAYERID'])) {
             $params = array(
                 'METHOD' => 'DoExpressCheckoutPayment',
@@ -128,7 +132,8 @@ class PayPal extends msPaymentHandler implements msPaymentInterface {
      *
      * @return array/boolean
      */
-    public function request($params = array()) {
+    public function request($params = array())
+    {
         $requestParams = array_merge(array(
             'USER' => $this->config['user'],
             'PWD' => $this->config['password'],
@@ -172,13 +177,14 @@ class PayPal extends msPaymentHandler implements msPaymentInterface {
      *
      * @return string
      */
-    public function getPaymentLink(msOrder $order) {
+    public function getPaymentLink(msOrder $order)
+    {
         return $this->config['paymentUrl'] . '?' .
-            http_build_query(array(
-                'action' => 'continue',
-                'msorder' => $order->get('id'),
-                'mscode' => $this->getOrderHash($order),
-            ));
+        http_build_query(array(
+            'action' => 'continue',
+            'msorder' => $order->get('id'),
+            'mscode' => $this->getOrderHash($order),
+        ));
     }
 
 }

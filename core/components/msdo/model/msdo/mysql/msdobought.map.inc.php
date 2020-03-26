@@ -4,6 +4,10 @@ $xpdo_meta_map['msdoBought']= array (
   'version' => '1.1',
   'table' => 'msdo_bought',
   'extends' => 'xPDOSimpleObject',
+  'tableMeta' => 
+  array (
+    'engine' => 'MyISAM',
+  ),
   'fields' => 
   array (
     'product_id' => NULL,
@@ -11,6 +15,7 @@ $xpdo_meta_map['msdoBought']= array (
     'user_id' => NULL,
     'value' => NULL,
     'boughtdon' => NULL,
+    'used' => NULL,
   ),
   'fieldMeta' => 
   array (
@@ -49,6 +54,12 @@ $xpdo_meta_map['msdoBought']= array (
     array (
       'dbtype' => 'datetime',
       'phptype' => 'datetime',
+      'null' => true,
+    ),
+    'used' => 
+    array (
+      'dbtype' => 'int',
+      'phptype' => '10',
       'null' => true,
     ),
   ),

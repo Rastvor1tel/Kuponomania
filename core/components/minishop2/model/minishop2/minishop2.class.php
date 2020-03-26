@@ -2,7 +2,7 @@
 
 class miniShop2
 {
-    public $version = '2.4.16-pl';
+    public $version = '2.5.0-pl';
     /** @var modX $modx */
     public $modx;
     /** @var pdoFetch $pdoTools */
@@ -669,7 +669,7 @@ class miniShop2
     public function changeOrderStatus($order_id, $status_id)
     {
         /** @var msOrder $order */
-        if (!$order = $this->modx->getObject('msOrder', array('id' => $order_id))) {
+        if (!$order = $this->modx->getObject('msOrder', array('id' => $order_id), false)) {
             return $this->modx->lexicon('ms2_err_order_nf');
         }
 

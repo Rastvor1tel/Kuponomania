@@ -1,7 +1,9 @@
-<div class="row ms2_product">
+<div class="row ms2_product {if $widthblock}widthblock{/if}">
     <div class="promotion-teaser">
         <a href="{$id | url}" class="promotion-teaser__image">
-            {if $image?}
+            {if $previewImage}
+                <img class="coupon_avatar" src="{$previewImage}" data-echo="{$previewImage}" alt="{$pagetitle}" title="{$pagetitle}"/>
+            {elseif $image}
                 <img class="coupon_avatar" src="{$thumb}" data-echo="{$image}" alt="{$pagetitle}" title="{$pagetitle}"/>
             {else}
                 <img class="coupon_avatar" src="{'assets_url' | option}components/minishop2/img/web/ms2_small.png" srcset="{'assets_url' | option}components/minishop2/img/web/ms2_small@2x.png 2x" alt="{$pagetitle}" title="{$pagetitle}"/>
@@ -12,7 +14,7 @@
                 <input type="hidden" name="id" value="{$id}">
                 <input type="hidden" name="count" value="1">
                 <input type="hidden" name="options" value="[]">
-                <a href="{$id | url}" style="height: 15%; color: #4a4a4a;">[[+pagetitle]]</a>
+                <a href="{$id | url}" style="height: 15%; color: #4a4a4a;">{$pagetitle}</a>
                 <span class="flags">
                     {if $new}
                         <i class="glyphicon glyphicon-flag" title="{'ms2_frontend_new' | lexicon}"></i>
@@ -29,14 +31,18 @@
                 <div class="promotion-teaser-footer">
                     <div class="promotion-teaser-footer-col">
                         <div class="old-price-teaser">
-                            {if $old_price}
-                                <span>{$old_price}</span><span style="font-size:20px;">{'ms2_frontend_currency' | lexicon}</span>
+                            {if $oldPrice}
+                                <span>{$oldPrice}</span> <span style="font-size:20px;">{'ms2_frontend_currency' | lexicon}</span>
                             {/if}
                         </div>
                     </div>
                     <div class="promotion-teaser-footer-col promotion-teaser-footer-col--link">
                         <div class="new-price-teaser">
-                            {$price}<span style="font-size:20px;">{'ms2_frontend_currency' | lexicon}</span>
+                            {if $economy}
+                                {$economy} <span style="font-size:20px;">{'ms2_frontend_currency' | lexicon}</span>
+                            {else}
+                                {$oldPrice - ($oldPrice * $discount / 100)} <span style="font-size:20px;">{'ms2_frontend_currency' | lexicon}</span>
+                            {/if}
                         </div>
                     </div>
                 </div>

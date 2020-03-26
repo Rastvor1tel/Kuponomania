@@ -18,15 +18,6 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="phone" class="col-sm-4 control-label">[[!%login.phone]]</label>
-                <div class="col-sm-8">
-                    <input type="text" name="phone" class="form-control" id="phone" value="[[+phone]]">
-                    <span class="help-block text-error">
-                        [[+error.phone]]
-                    </span>
-                </div>
-            </div>
-            <div class="form-group">
                 <label for="mobilephone" class="col-sm-4 control-label">[[!%login.mobilephone]]</label>
                 <div class="col-sm-8">
                     <input type="text" name="mobilephone" class="form-control" id="mobilephone" value="[[+mobilephone]]">
@@ -45,29 +36,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="country" class="col-sm-4 control-label">[[!%login.country]]</label>
-                <div class="col-sm-8">
-                    <input type="text" name="country" class="form-control" id="country" value="[[+country]]">
-                    <span class="help-block text-error">
-                        [[+error.country]]
-                    </span>
-                </div>
-            </div>
-            <div class="form-group">
                 <label for="city" class="col-sm-4 control-label">[[!%login.city]]</label>
                 <div class="col-sm-8">
                     <input type="text" name="city" class="form-control" id="city" value="[[+city]]">
                     <span class="help-block text-error">
                         [[+error.city]]
-                    </span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="website" class="col-sm-4 control-label">[[!%login.website]]</label>
-                <div class="col-sm-8">
-                    <input type="text" name="website" class="form-control" id="website" value="[[+website]]">
-                    <span class="help-block text-error">
-                        [[+error.website]]
                     </span>
                 </div>
             </div>

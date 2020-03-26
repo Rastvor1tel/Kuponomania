@@ -123,7 +123,7 @@ $_lang['ms2_frontend_street'] = 'Улица';
 $_lang['ms2_frontend_building'] = 'Дом';
 $_lang['ms2_frontend_room'] = 'Комната';
 
-$_lang['ms2_frontend_order_cost'] = 'Итого, с доставкой';
+$_lang['ms2_frontend_order_cost'] = 'Итого';
 $_lang['ms2_frontend_order_submit'] = 'Сделать заказ!';
 $_lang['ms2_frontend_order_cancel'] = 'Очистить форму';
 $_lang['ms2_frontend_order_success'] = 'Спасибо за оформление заказа <b>#[[+num]]</b> на нашем сайте <b>[[++site_name]]</b>!';

@@ -8,6 +8,10 @@
  * files found in the top-level directory of this distribution.
  */
 
+ini_set('apc.cache_by_default', 0);
+ini_set('display_errors', 1);
+ini_set('error_reporting', -1);
+
 $tstart= microtime(true);
 
 /* define this as true in another entry file, then include this file to simply access the API

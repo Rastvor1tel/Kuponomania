@@ -1,3 +1,3 @@
 <?php
-require_once (dirname(dirname(__FILE__)) . '/msdobought.class.php');
+require_once (dirname(__DIR__) . '/msdobought.class.php');
 class msdoBought_mysql extends msdoBought {}

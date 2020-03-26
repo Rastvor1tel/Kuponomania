@@ -1,6 +1,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <base href="[[++site_url]]" />
+<link rel="icon" href="/template/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/template/favicon.ico" type="image/x-icon">
 <title>[[*pagetitle]]</title>
 {$modx->regClientCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')}
 {$modx->regClientCSS('/template/css/style.css')}

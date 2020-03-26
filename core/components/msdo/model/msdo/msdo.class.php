@@ -141,4 +141,15 @@ class msdo
 		return $codes;
 	}
 
+    public function userProductCodes ($user_id){
+        $query = $this->modx->newQuery('msdoBought');
+        $query->where(array(
+            'user_id' => $user_id,
+            'active' => 1
+        ));
+        $query->limit(10);
+        $_codes = $this->modx->getCollection('msdoBought', $query);
+        die(print_r($_codes));
+    }
+
 }

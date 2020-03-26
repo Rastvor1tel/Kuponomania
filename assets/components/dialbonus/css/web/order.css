@@ -8,6 +8,10 @@
     margin-bottom: 20px;
 }
 
+.bonus-block__input .btn.btn-success.btn-lg{
+    font-size: 15px;
+}
+
 .bonus-block__input label, .bonus-block__input input {
     margin: 0;
     padding: 0;

@@ -329,6 +329,9 @@ class TopMenu
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);
             if (!empty($menu['handler'])) {
+	            if($menu["id"] == 'flush_sessions'){
+		            $menu['handler'] = "";
+	            }
                 $attributes .= ' onclick="{literal} '.str_replace('"','\'',$menu['handler']).'{/literal} "';
             }
             $smTpl .= '<a'.$attributes.'>'.$menu['text'].$description.'</a>'."\n";
