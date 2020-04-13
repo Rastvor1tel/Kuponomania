@@ -1,4 +1,4 @@
-/.idea/
-/connectors/
-/manager/
-/core/cache/
+/.idea
+/connectors
+/manager
+/core/cache

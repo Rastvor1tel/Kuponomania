@@ -19,23 +19,23 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 	 */
 	function __construct(xPDOObject $object, $config = []) {
 		parent::__construct($object, $config);
-		
+
 		$siteUrl = $this->modx->getOption('site_url');
 		$assetsUrl = $this->modx->getOption('assets_url') . 'components/minishop2/';
 		$paymentUrl = $siteUrl . substr($assetsUrl, 1) . 'payment/yandex.php';
-		
+
 		$this->config = array_merge([
 			'paymentUrl'    => $paymentUrl,
-			'apiUrl'        => $this->modx->getOption('ms2_yandex_api_url', NULL, 'https://payment.yandex.net/api/v3/payments'),
-			'apiKey'        => $this->modx->getOption('ms2_yandex_apikey', NULL, ''),
-			'shopId'        => $this->modx->getOption('ms2_yandex_shopid', NULL, ''),
+			'apiUrl'        => $this->modx->getOption('ms2_yandex_api_url', null, 'https://payment.yandex.net/api/v3/payments'),
+			'apiKey'        => $this->modx->getOption('ms2_yandex_apikey', null, ''),
+			'shopId'        => $this->modx->getOption('ms2_yandex_shopid', null, ''),
 			/*'apiKey'        => 'test_DSHDYsQ2aqLdGUr8uVfbgE4IUovd4noGoAD1JAyDeI8',
 			'shopId'        => '626783',*/
-			'returnUrl'     => $this->modx->getOption('ms2_yandex_return_url', NULL, $siteUrl),
+			'returnUrl'     => $this->modx->getOption('ms2_yandex_return_url', null, $siteUrl),
 			'json_response' => false,
 		], $config);
 	}
-	
+
 	public function createPayObject($orderId, $orderSumm, $orderHash, $items = []) {
 		$client = new Client();
 		$client->setAuth($this->config['shopId'], $this->config['apiKey']);
@@ -62,7 +62,7 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 		$payment = $client->createPayment($params, uniqid('', true));
 		return $payment;
 	}
-	
+
 	public function createPayment($orderId, $paymentId, $orderSum, $items) {
 		$client = new Client();
 		$client->setAuth($this->config['shopId'], $this->config['apiKey']);
@@ -85,33 +85,44 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 		$response = $client->createReceipt($receiptParams, uniqid('', true));
 		return $response;
 	}
-	
-	public function getCustomerData($orderId) {
+
+	public function getCustomerData($orderId, $bonus = false) {
 		$result = [];
 		$query = $this->modx->newQuery('msOrder');
 		$query->select([
 			'msOrder.id',
 			'msOrder.num',
 			'msOrder.address',
+			'msOrderAddress.properties',
 			'modUserProfile.*'
 		]);
 		$query->where([
-			'msOrder.id'     => $orderId
+			'msOrder.id' => $orderId
 		]);
 		$query->innerJoin('msOrderAddress', 'msOrderAddress', 'msOrder.address = msOrderAddress.id');
 		$query->innerJoin('modUserProfile', 'modUserProfile', 'msOrderAddress.user_id = modUserProfile.id');
 		$query->prepare();
 		$query->stmt->execute();
 		$userData = $query->stmt->fetchAll(PDO::FETCH_ASSOC)[0];
-		$result = [
-			'full_name' => $userData['fullname'],
-			'phone'     => preg_replace("/[^0-9]/", '', $userData['phone']),
-			'email'     => $userData['email']
-		];
+		if ($bonus) {
+			$bonus = json_decode($userData['properties']);
+			$result = [
+				'full_name' => $userData['fullname'],
+				'phone'     => preg_replace("/[^0-9]/", '', $userData['phone']),
+				'email'     => $userData['email'],
+				'bonus'     => $bonus->extfld_bonusvalue
+			];
+		} else {
+			$result = [
+				'full_name' => $userData['fullname'],
+				'phone'     => preg_replace("/[^0-9]/", '', $userData['phone']),
+				'email'     => $userData['email'],
+			];
+		}
 		return $result;
 	}
-	
-	public function getOrder($orderId) {
+
+	public function getOrder($orderId, $bonus = false) {
 		$result = [];
 		$query = $this->modx->newQuery('msOrderProduct');
 		$query->select(['msOrderProduct.*']);
@@ -123,11 +134,22 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 		$dbResult = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
 		if ($dbResult) {
 			foreach ($dbResult as $dbItem) {
+				if ($bonus > 0) {
+					$bonusPrice = $dbItem['price'] * $dbItem['count'];
+					if ($bonus <= $bonusPrice) {
+						$newPrice = ($bonusPrice - $bonus) / $dbItem['count'];
+						$itemPrice = number_format($newPrice, 2, '.', '');
+						$bonus = 0;
+					} else {
+						$itemPrice = 0;
+						$bonus -= $bonusPrice;
+					}
+				}
 				$result[] = [
 					"description"     => $dbItem['name'],
 					"quantity"        => number_format($dbItem['count'], 2, '.', ''),
 					"amount"          => [
-						"value"    => number_format($dbItem['price'], 2, '.', ''),
+						"value"    => number_format($itemPrice, 2, '.', ''),
 						"currency" => "RUB"
 					],
 					"vat_code"        => "4",
@@ -138,18 +160,18 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 		}
 		return $result;
 	}
-	
+
 	public function getPaymentLink(msOrder $order) {
 		$orderId = $order->get('id');
-		$items = $this->getOrder($orderId);
-		$customer = $this->getCustomerData($orderId);
+		$customer = $this->getCustomerData($orderId, true);
+		$items = $this->getOrder($orderId, $customer['bonus']);
 		$orderSumm = $order->get('cost');
 		$orderHash = $this->getOrderHash($order);
 		$response = $this->createPayObject($orderId, $orderSumm, $orderHash, $items);
 		$link = $response->confirmation->confirmation_url;
 		return $link;
 	}
-	
+
 	public function requestCheck() {
 		$source = file_get_contents('php://input');
 		$requestBody = json_decode($source, true);
@@ -161,7 +183,7 @@ class Yandex extends msPaymentHandler implements msPaymentInterface {
 		$payment = $notification->getObject();
 		return $payment;
 	}
-	
+
 	public function changeStatus(msOrder $order, $status = '') {
 		switch ($status) {
 			case 'succeeded':

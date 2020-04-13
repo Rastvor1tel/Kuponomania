@@ -18,11 +18,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="mobilephone" class="col-sm-4 control-label">[[!%login.mobilephone]]</label>
+                <label for="phone" class="col-sm-4 control-label">[[!%login.phone]]</label>
                 <div class="col-sm-8">
-                    <input type="text" name="mobilephone" class="form-control" id="mobilephone" value="[[+mobilephone]]">
+                    <input type="text" name="phone" class="form-control" id="phone" value="[[+phone]]">
                     <span class="help-block text-error">
-                        [[+error.mobilephone]]
+                        [[+error.phone]]
                     </span>
                 </div>
             </div>

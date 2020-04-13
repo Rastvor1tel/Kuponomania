@@ -7,8 +7,8 @@
                 <div class="col-sm-8 text-left">{$_modx->user.fullname}</div>
             </div>
             <div class="form-group">
-                <div class="col-sm-4 text-right"><b>[[!%login.mobilephone]]</b></div>
-                <div class="col-sm-8 text-left">{$_modx->user.mobilephone}</div>
+                <div class="col-sm-4 text-right"><b>[[!%login.phone]]</b></div>
+                <div class="col-sm-8 text-left">{$_modx->user.phone}</div>
             </div>
             <div class="form-group">
                 <div class="col-sm-4 text-right"><b>[[!%login.address]]</b></div>
