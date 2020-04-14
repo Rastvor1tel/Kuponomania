@@ -76,11 +76,19 @@
                 </div>
             </div>
         </div>
-
+        <button type="button" name="ms2_action" value="order/clean" class="btn btn-danger ms2_link">
+            {'ms2_frontend_order_cancel' | lexicon}
+        </button>
+        <hr class="mt-4 mb-4"/>
+        {*<div class="col-12 col-md-6">
+            <h4 class="mb-md-0">Сумма заказа:</h4>
+            <h3 class="mb-md-0 ml-md-2"><span id="ms2_order_cost">{$order.cost}</span> {'ms2_frontend_currency' | lexicon}</h3>
+        </div>*}
         <div class="col-12 col-md-6" id="bonus-block">
             <div class="bonus-block bonus-ajax-content">
                 <h4>Использование бонусов:</h4>
-                <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span> бонусов.</p>
+                <p>Доступно: <span id="bonus-balance">{'@FILE snippets/DialBonus/bonusBalance.php' | snippet}</span>
+                   бонусов.</p>
                 <p>Вы можете оплатить бонусами {'@FILE snippets/DialBonus/bonusDiscount.php' | snippet * 100}% ({'@FILE snippets/DialBonus/bonusDiscount.php'|snippet:['orderSum'=>$order.cost,'front'=>true]} {'ms2_frontend_currency' | lexicon}) от заказа.</p>
                 <div class="bonus-block__form">
                     <div class="bonus-block__input">
@@ -95,17 +103,12 @@
             </div>
         </div>
     </div>
-
-    <button type="button" name="ms2_action" value="order/clean" class="btn btn-danger ms2_link">
-        {'ms2_frontend_order_cancel' | lexicon}
-    </button>
-
     <hr class="mt-4 mb-4"/>
-
+    <div class="order-price col-12 col-md-6">
+        <div class="order-price__name">Итого:</div>
+        <div class="order-price__value"><span id="finalOrderCost">{$order.cost}</span> {'ms2_frontend_currency' | lexicon}</div>
+    </div>
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-end">
-        <h4 class="mb-md-0">{'ms2_frontend_order_cost' | lexicon}:</h4>
-        <h3 class="mb-md-0 ml-md-2"><span id="ms2_order_cost">{$order.cost}</span> {'ms2_frontend_currency' | lexicon}</h3>
-
         <button type="submit" name="ms2_action" value="order/submit" class="btn btn-lg btn-primary ml-md-2 ms2_link">
             {'ms2_frontend_order_submit' | lexicon}
         </button>

@@ -227,3 +227,12 @@ body.overflow {
 .header-lk:hover .header-lk__dropdown {
     display: block;
 }
+.order-price {
+    display: flex;
+    font-size: 25px;
+}
+
+.order-price__name {
+    font-weight: bold;
+    margin-right: 10px;
+}

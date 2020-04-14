@@ -82,6 +82,11 @@ var handleOverlayClose = function (evt) {
 	}
 
 };
+var bonusUpdate = function(){
+	var orderCost = $('.ms2_total_cost').text(),
+		newCost = orderCost - $('.bonus-block__input.bonus-value #bonusvalue').val();
+	$('#finalOrderCost').text(newCost);
+};
 $(function () {
 	$('#photo').change(function (e) {
 		if (!window.FileReader) {
@@ -145,8 +150,16 @@ $(function () {
 			price = parseFloat(basketItem.find('.block.price .currency-content span').text()),
 			newPrice = price * quantity;
 		basketItem.find('.block.summ .currency-content.summ-price').html(newPrice);
-
 	});
+
+	if ($('.bonus-block__input.bonus-value').length > 0) {
+		$('.product-quantity').change(function(){
+			bonusUpdate();
+		});
+		$('body').on('change', '.bonus-block__input.bonus-value #bonusvalue', function () {
+			bonusUpdate();
+		});
+	}
 });
 
 
