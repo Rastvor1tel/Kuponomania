@@ -2614,6 +2614,8 @@ ul {
 .p-deal_containers {
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
   & .loginFPLegend {
     font-size: 26px;
     line-height: 30px;

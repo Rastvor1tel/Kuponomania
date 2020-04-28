@@ -1,7 +1,10 @@
 {'!Register' | snippet : [
 'submitVar' => 'registerbtn',
-'activation' => '0',
-'submittedResourceId' => '25',
+'activation' => 1,
+'activationEmailSubject' => 'Подтверждение регистрации',
+'activationResourceId' => 55,
+'successMsg' => '<p>Спасибо за регистрацию. На вашу электронную почту [[!+email]] отправлено письмо, содержащее ссылку, необходимую для активацию аккаунта. Перейдите по этой ссылке, чтобы завершить процедуру регистрации.</p>',
+'submittedResourceId' => 25,
 'usergroups' => 'Users',
 'usernameField' => 'email',
 'passwordField' => 'password',

@@ -1065,7 +1065,11 @@ ul {
 
 @media screen and (max-width: 520px) {
     .content-right-column .sidebar .promotion-adress-map {
-        display: none;
+        /*display: none;*/
+        width: auto;
+        margin-right: 0;
+        max-width: 100%;
+        display: flex;
     }
 }
 
@@ -1498,6 +1502,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin: 0 -6px 16px;
+    width: 100%;
 }
 
 @media screen and (max-width: 540px) {
@@ -1750,6 +1755,7 @@ ul {
     display: flex;
     margin: 0 -8px;
     padding-bottom: 15px;
+    width: 100%;
 }
 
 @media screen and (max-width: 979px) {
@@ -3042,6 +3048,7 @@ ul {
     text-align: center;
     height: 33px;
     right: 0;
+    white-space: nowrap;
 }
 
 .ms2_product .old-price-teaser {
@@ -3096,6 +3103,11 @@ ul {
 
     .ms2_product .promotion-teaser-content {
         line-height: 10px;
+    }
+
+    .ms2_product .promotion-teaser-content span {
+        font-size: 10px;
+        height: auto!important;
     }
 
     .ms2_product .promotion-teaser__content {
@@ -3385,6 +3397,8 @@ ul {
 
 .p-deal_containers {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
     /*text-align: center;*/
 }
 

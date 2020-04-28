@@ -83,9 +83,14 @@ var handleOverlayClose = function (evt) {
 
 };
 var bonusUpdate = function(){
-	var orderCost = $('.ms2_total_cost').text(),
-		newCost = orderCost - $('.bonus-block__input.bonus-value #bonusvalue').val();
-	$('#finalOrderCost').text(newCost);
+	var orderCost = parseInt($('.ms2_total_cost').text()),
+		newCost = orderCost,
+		bonus = parseInt($('.bonus-block__input.bonus-value #bonusvalue').val()),
+		maxBonus = parseInt($('.bonus-block__input.bonus-value #bonusvalue').attr('max'));
+	if (bonus <= maxBonus) {
+		newCost = orderCost - bonus;
+		$('#finalOrderCost').text(newCost);
+	}
 };
 $(function () {
 	$('#photo').change(function (e) {
